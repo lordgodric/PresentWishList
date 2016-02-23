@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+  head
+    title= PresentWishList
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="assets/css/main.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Signika")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Signika:300")
+
+  body
+    .l-header 
+      .l-header-content
+        .sign
+          button.register
+            a(href="#")
+              span.register-icon
+              span register
+          button.login
+            a(href="#")
+              span.login-icon
+              span login
+        a(href="#").headerLogo
+          img(src="assets/img/logo.png", alt="header logo")
+        .header-nav
+          a(href="#").text-uppercase.nav-font home
+          a(href="#").text-uppercase.nav-font create a list
+          a(href="#").text-uppercase.nav-font now it works
+
+    .l-main
+      .l-main-content
+        .chose-your-presents
+          div.chose-header 
+            p Chose Your Presents
+          div.steps
+            button ◀ back
+            p Step 2 of 2
+            hr
+          div.search
+            p
+              | Search for your products using the search function below. To add an item to your list, hover over 
+              | the item and click the “Add to list” button.
+            input 
+          div.gallery
+          div.note
+        .wish-list
+          div.wishlist-header
+            p.text-uppercase my present wishlist
+          div.article
+          div.item-list
+          div.share
+
+    .l-footer
+      .l-footer-content
+        a(href="#").footerLogo
+          img(src="assets/img/logo.png", alt="footer logo")
+        .social
+          a(href="https://www.facebook.com").facebook
+          a(href="https://twitter.com").twiiter
+        .footer-nav
+          ul
+            li
+              a.text-uppercase(href="#").nav-font home
+            li
+              a.text-uppercase(href="#").nav-font register
+            li
+              a.text-uppercase(href="#").nav-font login
+            li
+              a.text-uppercase(href="#").nav-font create a list
+            li
+              a.text-uppercase(href="#").nav-font how it works
+            li
+              a.text-uppercase(href="#").nav-font faq
+            li
+              a.text-uppercase(href="#").nav-font contact
+        .copyright
+          p Copyright 2013 Present Wishlist. All rights reserved.

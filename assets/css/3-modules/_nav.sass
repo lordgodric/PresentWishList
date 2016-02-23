@@ -1,0 +1,32 @@
+.header-nav
+	display: inline-block
+	position: absolute
+	right: 0px
+	top: 60px
+	
+	@media only screen and (max-width: $screen-xs-max)
+		margin: 100px 50% 0 0
+		right: -60px
+
+	a
+		margin-left: 70px
+		font-size: 18px
+		font-weight: 400
+
+		@media only screen and (max-width: $screen-xs-max)
+			display: block
+			width: 100%
+			margin-left: 0
+
+.footer-nav
+	text-align: center
+
+	ul
+		list-style: none
+		padding: 0
+		margin-bottom: 0px
+	
+		li
+			display: inline-block
+			margin: 13px 
+			font-weight: bold

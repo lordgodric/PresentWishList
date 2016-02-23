@@ -1,0 +1,16 @@
+.l-header
+	background: linear-gradient(135deg, white 25%, #f3f3f3 25%, #f3f3f3 50%, white 50%, white 75%, #f3f3f3 75%, #f3f3f3)
+	background-size: 6px 6px 
+	
+	.l-header-content
+		max-width: 960px
+		background-color: $white
+		margin: 0 auto
+		height: 135px
+		position: relative
+		@extend .l-header
+
+		@media only screen and (max-width: $screen-xs-max)
+			height: 250px
+
+		

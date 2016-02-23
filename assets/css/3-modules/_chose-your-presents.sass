@@ -1,0 +1,39 @@
+.chose-your-presents
+	@extend .l-header
+	display: inline-block
+	min-width: 500px
+	max-width: 40%
+	// height: 1025px
+	margin: 40px 35px 73px 0
+	padding: 20px 35px
+
+	@media only screen and (max-width: $screen-xs-max)
+		min-width: 300px
+		padding: 10px
+
+
+	.chose-header
+		font-size: 50px
+		color: $cherry
+		font-family: 'Signika'
+		font-weight: 300
+		text-align: center
+
+	.steps
+
+		button
+			background-color: $cherry
+			letter-spacing: 1px
+			padding: 0 5px
+			height: 25px
+			float: left
+			&:hover
+				color: $yellow
+		p
+			text-align: center
+			margin: 0 70px
+			font-size: 20px
+			color: $text
+	.search
+		p
+			font-size: 16px
