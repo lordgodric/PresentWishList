@@ -1,6 +1,38 @@
 .wish-list
 	@extend .l-header
 	display: inline-block
-	// width: 45%
+	// float: right
+	margin-top: 40px
 	min-width: 350px
-	// height: 950px
+	height: 1000px
+	vertical-align: top
+	border-radius: 0.3em
+
+	.wishlist-header
+		height: 60px
+		width: 100%
+		background-image: url("../img/wishlist-header.png")
+		border-radius: 0.3em
+		position: relative
+
+		.list-header-text
+			font-size: 20px
+			display: block
+			text-align: center
+			color: $white
+			font-family: 'Ubuntu', sans-serif
+			font-weight: bold
+			padding-top: 11px
+
+			&:hover
+				color: $lime
+
+		.link-icon
+			position: absolute
+			left: 15px
+			top: 8px
+		.pencil-icon
+			position: absolute
+			right: 15px
+			top: 8px
+			img

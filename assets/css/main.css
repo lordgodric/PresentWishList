@@ -1,21 +1,3 @@
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Fira Sans"), local("FiraSans-Regular"), url(http://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url(http://fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Fira Mono"), local("FiraMono"), url(http://fonts.gstatic.com/s/firamono/v3/SlRWfq1zeqXiYWAN-lnG-pBw1xU1rKptJj_0jans920.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -421,45 +403,158 @@ input[type="button"] {
 .copyright {
   text-align: center;
   font-size: 16px;
-  font-family: "Signika";
+  font-family: "Signika", Courier, monospace;
   color: #a2a2a2;
   font-weight: 300; }
 
 .chose-your-presents {
   display: inline-block;
-  min-width: 500px;
-  max-width: 40%;
+  max-width: 500px;
   margin: 40px 35px 73px 0;
-  padding: 20px 35px; }
+  padding: 20px 35px;
+  border-radius: 0.3em; }
   @media only screen and (max-width: 767px) {
     .chose-your-presents {
       min-width: 300px;
-      padding: 10px; } }
+      padding: 10px;
+      margin: 40px 0px 73px 0; } }
   .chose-your-presents .chose-header {
     font-size: 50px;
     color: #d93655;
-    font-family: "Signika";
+    font-family: "Signika", Courier, monospace;
     font-weight: 300;
     text-align: center; }
+    .chose-your-presents .chose-header p {
+      margin: 0; }
   .chose-your-presents .steps button {
     background-color: #d93655;
     letter-spacing: 1px;
     padding: 0 5px;
     height: 25px;
-    float: left; }
-    .chose-your-presents .steps button:hover {
-      color: #FFDC00; }
+    float: left;
+    line-height: 0; }
+    .chose-your-presents .steps button a {
+      color: #f6f6f6;
+      letter-spacing: 0.1px; }
+      .chose-your-presents .steps button a:hover {
+        color: #FFDC00; }
   .chose-your-presents .steps p {
     text-align: center;
     margin: 0 70px;
     font-size: 20px;
     color: #9f9e9e; }
   .chose-your-presents .search p {
-    font-size: 16px; }
+    font-size: 16px;
+    color: #8f8f8f;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 18px;
+    letter-spacing: 0.3px; }
+  .chose-your-presents .search form {
+    position: relative; }
+    .chose-your-presents .search form input[type="search"] {
+      height: 50px;
+      width: 100%;
+      background-image: url("../img/pattern-search.png");
+      font-size: 20px;
+      border-radius: 0.3em;
+      border: 1px solid #ccc; }
+    .chose-your-presents .search form input[placeholder] {
+      padding-left: 10px;
+      color: #848484; }
+    .chose-your-presents .search form .search-icon {
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      right: 0px;
+      top: 15px;
+      background-image: url("../img/search-icon.png"); }
+  .chose-your-presents .gallery {
+    height: 660px;
+    overflow-x: scroll;
+    overflow-x: hidden; }
+    .chose-your-presents .gallery .item {
+      width: 150px;
+      height: 215px;
+      display: inline-block;
+      margin-bottom: 20px;
+      margin-right: 5px; }
+      .chose-your-presents .gallery .item .cover {
+        height: 130px;
+        width: 130px;
+        border: 10px solid white; }
+      .chose-your-presents .gallery .item p {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0;
+        font-family: "Signika";
+        font-weight: 300;
+        margin-top: 10px; }
+      .chose-your-presents .gallery .item .item-price {
+        color: #d93655; }
+    .chose-your-presents .gallery .item1 .cover {
+      background-image: url("../img/item-cover-1.png");
+      background-position: -20px -20px; }
+    .chose-your-presents .gallery .item2 .cover {
+      background-image: url("../img/item-cover-2.png");
+      background-position: -20px -20px; }
+    .chose-your-presents .gallery .item3 .cover {
+      background-image: url("../img/item-cover-3.png");
+      background-position: -20px -20px; }
+    .chose-your-presents .gallery .item4 .cover {
+      background-image: url("../img/item-cover-4.png");
+      background-position: -20px -20px; }
+    .chose-your-presents .gallery .item5 .cover {
+      background-image: url("../img/item-cover-5.png");
+      background-position: -20px -20px; }
+    .chose-your-presents .gallery .item6 .cover {
+      background-image: url("../img/item-cover-6.png");
+      background-position: -20px -20px; }
+    .chose-your-presents .gallery .item7 .cover {
+      background-image: url("../img/item-cover-7.png");
+      background-position: 5px 5px; }
+    .chose-your-presents .gallery .item8 .cover {
+      background-image: url("../img/item-cover-8.png");
+      background-position: 5px 5px; }
+    .chose-your-presents .gallery .item9 .cover {
+      background-image: url("../img/item-cover-9.png");
+      background-position: 5px 5px; }
+  .chose-your-presents .note p {
+    display: block;
+    text-align: center;
+    color: #9f9e9e;
+    font-family: "Ubuntu"; }
 
 .wish-list {
   display: inline-block;
-  min-width: 350px; }
+  margin-top: 40px;
+  min-width: 350px;
+  height: 1000px;
+  vertical-align: top;
+  border-radius: 0.3em; }
+  .wish-list .wishlist-header {
+    height: 60px;
+    width: 100%;
+    background-image: url("../img/wishlist-header.png");
+    border-radius: 0.3em;
+    position: relative; }
+    .wish-list .wishlist-header .list-header-text {
+      font-size: 20px;
+      display: block;
+      text-align: center;
+      color: #f6f6f6;
+      font-family: "Ubuntu", sans-serif;
+      font-weight: bold;
+      padding-top: 11px; }
+      .wish-list .wishlist-header .list-header-text:hover {
+        color: #01FF70; }
+    .wish-list .wishlist-header .link-icon {
+      position: absolute;
+      left: 15px;
+      top: 8px; }
+    .wish-list .wishlist-header .pencil-icon {
+      position: absolute;
+      right: 15px;
+      top: 8px; }
 
 body {
   margin: 10px;
@@ -506,8 +601,7 @@ body {
       margin-bottom: 0px; }
 
 .l-header, .chose-your-presents, .wish-list, .l-header .l-header-content {
-  background: linear-gradient(135deg, white 25%, #f3f3f3 25%, #f3f3f3 50%, white 50%, white 75%, #f3f3f3 75%, #f3f3f3);
-  background-size: 6px 6px; }
+  background-image: url("../img/pattern.png"); }
   .l-header .l-header-content, .chose-your-presents .l-header-content, .wish-list .l-header-content {
     max-width: 960px;
     background-color: #f6f6f6;
@@ -519,21 +613,24 @@ body {
         height: 250px; } }
 
 .l-main {
-  background-image: url("../../assets/img/main-bg.png");
-  height: 1260px; }
+  background-image: url("../../assets/img/main-bg.png"); }
   .l-main .l-main-content {
-    height: 1260px;
     max-width: 960px;
     margin: 0 auto; }
 
 .l-footer, .l-footer .l-footer-content {
   height: 338px;
   background-color: #f6f6f6;
-  background: linear-gradient(135deg, white 25%, #f3f3f3 25%, #f3f3f3 50%, white 50%, white 75%, #f3f3f3 75%, #f3f3f3);
-  background-size: 6px 6px; }
+  background-image: url("../img/pattern.png"); }
   .l-footer .l-footer-content {
     max-width: 960px;
     margin: 0 auto; }
+  @media only screen and (max-width: 680px) {
+    .l-footer, .l-footer .l-footer-content {
+      height: 380px; } }
+  @media only screen and (max-width: 388px) {
+    .l-footer, .l-footer .l-footer-content {
+      height: 450px; } }
 
 body {
   margin: 0; }

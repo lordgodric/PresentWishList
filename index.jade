@@ -6,6 +6,7 @@ html(lang="en")
     link(rel="stylesheet", href="assets/css/main.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Signika")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Signika:300")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu")
 
   body
     .l-header 
@@ -29,25 +30,80 @@ html(lang="en")
     .l-main
       .l-main-content
         .chose-your-presents
-          div.chose-header 
+          .chose-header 
             p Chose Your Presents
-          div.steps
-            button ◀ back
+          .steps
+            button
+              a(href="#") ◀ back
             p Step 2 of 2
             hr
-          div.search
+          .search
             p
               | Search for your products using the search function below. To add an item to your list, hover over 
               | the item and click the “Add to list” button.
-            input 
-          div.gallery
-          div.note
+            form
+              input(type="search" placeholder="Search for your presents!")
+              a(href="#")
+                .search-icon
+            hr
+          .gallery
+            a(href="#")
+              .item.item1
+                .cover
+                p.item-name Siku - 1:87 Scale - Low Loader With John ... 
+                p.item-price £19.55
+            a(href="#")
+              .item.item2
+                .cover
+                p.item-name Siku - 1:87 Scale - Low Loader With John ... 
+                p.item-price £19.55
+            a(href="#")
+              .item.item3
+                .cover
+                p.item-name Siku - 1:87 Scale - Low Loader With John ... 
+                p.item-price £19.55
+            a(href="#")
+              .item.item4
+                .cover
+                p.item-name Siku - 1:87 Scale - Low Loader With John ... 
+                p.item-price £19.55
+            a(href="#")
+              .item.item5
+                .cover
+                p.item-name Siku - 1:87 Scale - Low Loader With John ... 
+                p.item-price £19.55
+            a(href="#")
+              .item.item6
+                .cover
+                p.item-name Siku - 1:87 Scale - Low Loader With John ... 
+                p.item-price £19.55
+            a(href="#")
+              .item.item7
+                .cover
+                p.item-name Siku - 1:87 Scale - Low Loader With John ... 
+                p.item-price £19.55
+            a(href="#")
+              .item.item8
+                .cover
+                p.item-name Siku - 1:87 Scale - Low Loader With John ... 
+                p.item-price £19.55
+            a(href="#")
+              .item.item9
+                .cover
+                p.item-name Siku - 1:87 Scale - Low Loader With John ... 
+                p.item-price £19.55
+          .note
+              p Please note, not all prices displayed will be accurate. 
         .wish-list
-          div.wishlist-header
-            p.text-uppercase my present wishlist
-          div.article
-          div.item-list
-          div.share
+          .wishlist-header
+            a(href="#").link-icon
+              img(src="assets/img/link-icon.png", alt="")
+            a(href="#").list-header-text My Present Wishlist
+            a(href="#").pencil-icon
+              img(src="assets/img/pencil-icon.png", alt="")
+          .article
+          .item-list
+          .share
 
     .l-footer
       .l-footer-content

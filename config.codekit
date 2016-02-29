@@ -363,13 +363,112 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
-	"\/assets\/img\/Chose-Presents.png": {
+	"\/assets\/img\/item-cover-1.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2.60902e+06,
-		"inputAbbreviatedPath": "\/assets\/img\/Chose-Presents.png",
-		"outputAbbreviatedPath": "\/assets\/img\/Chose-Presents.png",
+		"initialSize": 14751,
+		"inputAbbreviatedPath": "\/assets\/img\/item-cover-1.png",
+		"outputAbbreviatedPath": "\/assets\/img\/item-cover-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/item-cover-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60792,
+		"inputAbbreviatedPath": "\/assets\/img\/item-cover-2.png",
+		"outputAbbreviatedPath": "\/assets\/img\/item-cover-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/item-cover-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59790,
+		"inputAbbreviatedPath": "\/assets\/img\/item-cover-3.png",
+		"outputAbbreviatedPath": "\/assets\/img\/item-cover-3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/item-cover-4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52322,
+		"inputAbbreviatedPath": "\/assets\/img\/item-cover-4.png",
+		"outputAbbreviatedPath": "\/assets\/img\/item-cover-4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/item-cover-5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53633,
+		"inputAbbreviatedPath": "\/assets\/img\/item-cover-5.png",
+		"outputAbbreviatedPath": "\/assets\/img\/item-cover-5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/item-cover-6.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 46646,
+		"inputAbbreviatedPath": "\/assets\/img\/item-cover-6.png",
+		"outputAbbreviatedPath": "\/assets\/img\/item-cover-6.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/item-cover-7.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55572,
+		"inputAbbreviatedPath": "\/assets\/img\/item-cover-7.png",
+		"outputAbbreviatedPath": "\/assets\/img\/item-cover-7.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/item-cover-8.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55742,
+		"inputAbbreviatedPath": "\/assets\/img\/item-cover-8.png",
+		"outputAbbreviatedPath": "\/assets\/img\/item-cover-8.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/item-cover-9.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56355,
+		"inputAbbreviatedPath": "\/assets\/img\/item-cover-9.png",
+		"outputAbbreviatedPath": "\/assets\/img\/item-cover-9.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/link-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 516,
+		"inputAbbreviatedPath": "\/assets\/img\/link-icon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/link-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -396,6 +495,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/pattern-search.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17322,
+		"inputAbbreviatedPath": "\/assets\/img\/pattern-search.png",
+		"outputAbbreviatedPath": "\/assets\/img\/pattern-search.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/pattern.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88,
+		"inputAbbreviatedPath": "\/assets\/img\/pattern.png",
+		"outputAbbreviatedPath": "\/assets\/img\/pattern.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/pencil-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 465,
+		"inputAbbreviatedPath": "\/assets\/img\/pencil-icon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/pencil-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/search-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 414,
+		"inputAbbreviatedPath": "\/assets\/img\/search-icon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/search-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/sign-icons.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -414,6 +557,17 @@
 		"initialSize": 1435,
 		"inputAbbreviatedPath": "\/assets\/img\/social.png",
 		"outputAbbreviatedPath": "\/assets\/img\/social.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/wishlist-header.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24122,
+		"inputAbbreviatedPath": "\/assets\/img\/wishlist-header.png",
+		"outputAbbreviatedPath": "\/assets\/img\/wishlist-header.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -439,15 +593,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,
