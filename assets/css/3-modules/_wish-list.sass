@@ -1,17 +1,19 @@
 .wish-list
 	@extend .l-header
 	display: inline-block
-	// float: right
 	margin-top: 40px
-	min-width: 350px
+	max-width: 350px
+	min-width: 340px
 	height: 1000px
 	vertical-align: top
 	border-radius: 0.3em
+	box-shadow: 0px 0px 8px 0px rgb(100,100,100)
 
 	.wishlist-header
 		height: 60px
 		width: 100%
 		background-image: url("../img/wishlist-header.png")
+		background-position: -2px
 		border-radius: 0.3em
 		position: relative
 
@@ -34,27 +36,56 @@
 			height: 21px
 			width: 21px
 			padding: 10px 
-			border: 1px solid black
+			border: 1px solid #222
 			border-radius: 0.3em
 			box-shadow: 0px 1px 0px 0px rgb(125,125,125), 0px 1px 0px 0px rgb(125,125,125) inset, -1px 0px 1px 0px rgb(70,70,70) inset
+
 			&:hover
 				border: 1px solid #bbb
+
 			img
 				height: 21px
 				margin-left: 2px
-				// width: 21px
+
 		.pencil-icon
 			position: absolute
 			right: 15px
 			top: 8px
 			height: 21px
-			// width: 21px
 			padding: 10px
-			border: 1px solid black
+			border: 1px solid #222
 			border-radius: 0.3em
 			box-shadow: 0px 1px 0px 0px rgb(125,125,125), 0px 1px 0px 0px rgb(125,125,125) inset, -1px 0px 1px 0px rgb(70,70,70) inset
+
 			img
 				height: 21px
+			
 			&:hover
 				border: 1px solid #bbb
+
+	.article
+		.pages
+			background-image: url("../img/pages2.jpg")
+			height: 13px
+			width: 100%
+			background-position: -2px
+
+
+		.article-cover-1
+			float: left
+			padding: 10px
+		
+		.article-text
+			text-align: justify
+			font: 1.2em 'Pacifico', cursive
+			margin-top: 5px
+			line-height: 25px
+			color: #464545
+			padding: 10px
+
+		.read-more
+			text-decoration: underline
+			font: 12px "Ubuntu", serif
+			float: left
+			color: #a3acb3
 			
