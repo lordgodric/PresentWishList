@@ -3,6 +3,9 @@ html(lang="en")
   head
     title= PresentWishList
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    script(type='text/javascript' src="assets/js/jquery-2.1.4.min.js")
+    script(type='text/javascript' src="assets/js/functions.js")
+    //- script(type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js")
     link(rel="stylesheet", href="assets/css/main.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Signika")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Signika:300")
@@ -107,10 +110,23 @@ html(lang="en")
             .pages
             img(src="assets/img/article-cover-1.png", alt="article-cover").article-cover-1
             .article-text
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorem provident, qui...
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolorem, qui...
             a(href="#").read-more Read more »
-          .item-list
+            img(src="assets/img/clip1.png", alt="clip").clip1
+            hr
+            hr
+          .item-wishlist
+            .item-wl-wrapper
+              .item-wl-cover
+              .item-wl-header
+                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate laborum fugiat, eius!
+              .item-wl-price
+              .item-wl-by
           .share
+            hr
+            hr
+            .share-button 
+              a(href="#") Save & Share
 
     .l-footer
       .l-footer-content

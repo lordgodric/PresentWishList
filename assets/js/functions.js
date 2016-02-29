@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
-  // Get started!
+  $(".item").click(function() {
+  	console.log('test');
+  });
 
 });

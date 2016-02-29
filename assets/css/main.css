@@ -416,7 +416,7 @@ input[type="button"] {
   box-shadow: 0px 0px 8px 0px #646464; }
   @media only screen and (max-width: 767px) {
     .chose-your-presents {
-      min-width: 300px;
+      min-width: 250px;
       padding: 10px;
       margin: 40px 0px 20px 0px; } }
   .chose-your-presents .chose-header {
@@ -454,11 +454,14 @@ input[type="button"] {
     position: relative; }
     .chose-your-presents .search form input[type="search"] {
       height: 50px;
-      width: 100%;
+      width: 98%;
       background-image: url("../img/pattern-search.png");
       font-size: 20px;
       border-radius: 0.3em;
       border: 1px solid #ccc; }
+      @media only screen and (max-width: 767px) {
+        .chose-your-presents .search form input[type="search"] {
+          width: 95%; } }
     .chose-your-presents .search form input[placeholder] {
       padding-left: 10px;
       color: #848484; }
@@ -466,9 +469,12 @@ input[type="button"] {
       height: 25px;
       width: 25px;
       position: absolute;
-      right: 0px;
+      right: 10px;
       top: 15px;
       background-image: url("../img/search-icon.png"); }
+      @media only screen and (max-width: 767px) {
+        .chose-your-presents .search form .search-icon {
+          right: 15px; } }
   .chose-your-presents .gallery {
     height: 660px;
     overflow-x: scroll;
@@ -524,14 +530,15 @@ input[type="button"] {
     display: block;
     text-align: center;
     color: #9f9e9e;
-    font-family: "Ubuntu"; }
+    font-family: "Ubuntu", serif;
+    margin-top: 20px; }
 
 .wish-list {
   display: inline-block;
   margin-top: 40px;
   max-width: 350px;
   min-width: 340px;
-  height: 1000px;
+  height: 974px;
   vertical-align: top;
   border-radius: 0.3em;
   box-shadow: 0px 0px 8px 0px #646464; }
@@ -559,9 +566,9 @@ input[type="button"] {
       height: 21px;
       width: 21px;
       padding: 10px;
-      border: 1px solid #222;
+      border: 1px solid #333;
       border-radius: 0.3em;
-      box-shadow: 0px 1px 0px 0px #7d7d7d, 0px 1px 0px 0px #7d7d7d inset, -1px 0px 1px 0px #464646 inset; }
+      box-shadow: 0px 1px 0px 0px #787878, 0px 1px 0px 0px #969696 inset, -0.8px 0px 1px 0px #4b4b4b inset; }
       .wish-list .wishlist-header .link-icon:hover {
         border: 1px solid #bbb; }
       .wish-list .wishlist-header .link-icon img {
@@ -573,33 +580,66 @@ input[type="button"] {
       top: 8px;
       height: 21px;
       padding: 10px;
-      border: 1px solid #222;
+      border: 1px solid #333;
       border-radius: 0.3em;
-      box-shadow: 0px 1px 0px 0px #7d7d7d, 0px 1px 0px 0px #7d7d7d inset, -1px 0px 1px 0px #464646 inset; }
+      box-shadow: 0px 1px 0px 0px #787878, 0px 1px 0px 0px #969696 inset, -0.8px 0px 1px 0px #4b4b4b inset; }
       .wish-list .wishlist-header .pencil-icon img {
         height: 21px; }
       .wish-list .wishlist-header .pencil-icon:hover {
         border: 1px solid #bbb; }
-  .wish-list .article .pages {
-    background-image: url("../img/pages2.jpg");
-    height: 13px;
-    width: 100%;
-    background-position: -2px; }
-  .wish-list .article .article-cover-1 {
-    float: left;
-    padding: 10px; }
-  .wish-list .article .article-text {
-    text-align: justify;
-    font: 1.2em "Pacifico", cursive;
-    margin-top: 5px;
-    line-height: 25px;
-    color: #464545;
-    padding: 10px; }
-  .wish-list .article .read-more {
-    text-decoration: underline;
-    font: 12px "Ubuntu", serif;
-    float: left;
-    color: #a3acb3; }
+  .wish-list .article {
+    position: relative; }
+    .wish-list .article .pages {
+      background-image: url("../img/pages2.jpg");
+      height: 13px;
+      width: 100%;
+      background-position: -2px; }
+    .wish-list .article .article-cover-1 {
+      float: left;
+      padding: 10px; }
+    .wish-list .article .article-text {
+      text-align: justify;
+      font: 1.2em "Pacifico", cursive;
+      margin-top: 5px;
+      line-height: 25px;
+      color: #464545;
+      padding: 10px 30px 10px 10px; }
+    .wish-list .article .read-more {
+      text-decoration: underline;
+      font: 12px "Ubuntu", serif;
+      float: left;
+      color: #a3acb3; }
+    .wish-list .article .clip1 {
+      position: absolute;
+      left: -3px;
+      top: 50px; }
+    .wish-list .article hr {
+      margin: 5px 2px; }
+  .wish-list .item-wishlist {
+    overflow-x: scroll;
+    overflow-x: hidden;
+    height: 635px; }
+  .wish-list .share hr {
+    margin: 5px 2px; }
+  .wish-list .share .share-button {
+    margin-top: 25px;
+    height: 91px;
+    background-image: url("../img/share-button-bg.png");
+    background-position: -2px 1px;
+    border-radius: 0.3em;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    font: bold 28px "Ubuntu", sans-serif;
+    line-height: 90px;
+    vertical-align: middle; }
+    .wish-list .share .share-button a {
+      border: 1px solid #333;
+      border-radius: 0.2em;
+      padding: 10px 75px;
+      box-shadow: 0px 1px 0px 0px #787878, 0px 1px 0px 0px #969696 inset, -0.8px 0px 1px 0px #4b4b4b inset;
+      color: #fff; }
+      .wish-list .share .share-button a:hover {
+        color: #01FF70; }
 
 body {
   margin: 10px;
