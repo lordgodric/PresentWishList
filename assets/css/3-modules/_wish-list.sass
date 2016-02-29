@@ -2,8 +2,9 @@
 	@extend .l-header
 	display: inline-block
 	margin-top: 40px
+	margin-bottom: 40px
 	max-width: 350px
-	min-width: 340px
+	min-width: 250px
 	height: 974px
 	vertical-align: top
 	border-radius: 0.3em
@@ -41,7 +42,7 @@
 			box-shadow: 0px 1px 0px 0px rgb(120,120,120), 0px 1px 0px 0px rgb(150,150,150) inset, -0.8px 0px 1px 0px rgb(75,75,75) inset
 
 			&:hover
-				border: 1px solid #bbb
+				border: 1px solid #000
 
 			img
 				height: 21px
@@ -61,7 +62,7 @@
 				height: 21px
 			
 			&:hover
-				border: 1px solid #bbb
+				border: 1px solid #000
 
 	.article
 		position: relative
@@ -101,10 +102,25 @@
 		overflow-x: scroll
 		overflow-x: hidden
 		height: 635px
+		padding: 0 10px
+
+		.item
+
+			.cover
+				display: inline-block
+				height: 70px
+				width: 70px
+				background-color: red
+			.item-name
+				font: 1.2em 'Pacifico', cursive
+				color: #1b75ba
+			.item-price
 
 	.share
+
 		hr
 			margin: 5px 2px
+
 		
 		.share-button
 			margin-top: 25px
@@ -127,3 +143,8 @@
 				
 				&:hover
 					color: $lime
+					border: 1px solid #000
+
+				@media only screen and (max-width: $screen-xs-max)
+					font-size: 16px
+					padding: 15px 100px

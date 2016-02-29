@@ -1,7 +1,10 @@
 $( document ).ready(function() {
 
   $(".item").click(function() {
-  	console.log('test');
+  	$(this).clone().appendTo($(".item-wl-wrapper"));
+  	$(this).children('.cover').css({
+  		
+  	});
   });
 
 });
