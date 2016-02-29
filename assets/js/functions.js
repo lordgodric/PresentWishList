@@ -1,10 +1,8 @@
 $( document ).ready(function() {
 
   $(".item").click(function() {
-  	$(this).clone().appendTo($(".item-wl-wrapper"));
-  	$(this).children('.cover').css({
-  		
-  	});
+  	$(this).clone().appendTo($(".item-wishlist"));
+  	$(".item-wl-wrapper")
   });
 
 });
