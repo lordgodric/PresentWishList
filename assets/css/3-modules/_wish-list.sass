@@ -121,6 +121,41 @@
 			display: inline-block
 			margin: 15px 0
 			text-align: left
+			border-radius: 0.4em
+			position: relative
+
+			&:hover
+				background-image: url("../img/shape-38.png")
+				background-size: cover
+
+				.view-item
+					display: block
+					position: absolute
+					height: 40px
+					left: 30px
+					top: 20px
+					background: #f7f7f7
+					color: $hoverItem
+					font: 15px "Ubuntu", serif
+					font-weight: 500
+					text-transform: none
+					word-spacing: 0.1px
+
+				.more-options
+					display: block
+					position: absolute
+					height: 40px
+					right: 20px
+					top: 20px
+					background: #f7f7f7
+					color: $hoverItem
+					font: 15px "Ubuntu", serif
+					text-transform: none
+					font-weight: 500
+					word-spacing: 0.1px
+
+
+
 
 			.cover
 				height: 70px
@@ -130,7 +165,7 @@
 				float: left
 				display: block
 				margin-right: 10px
-				
+
 			.item-name
 				font: 1.2em 'Pacifico', cursive
 				color: #1b75ba
@@ -142,15 +177,29 @@
 
 			.item-price
 				color: $cherry
-				font: 16px "Ubuntu", serif
+				font: 14px "Ubuntu", serif
 				font-weight: 500
 				display: block
 
 			.by
+				display: block
 				img
 					vertical-align: middle
 					margin-left: 5px
 
+			.add-to-list
+				display: none
+
+			.category
+				@extend .add-to-list
+
+			.view-item
+				display: none
+
+			.more-options
+				display: none
+
+			
 
 	.share
 

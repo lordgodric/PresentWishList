@@ -27,11 +27,16 @@ $( document ).ready(function() {
 		  		// та добавляємо клас .added, щоб помітити товар в якому ми добавили текст попереду і більше не добавляти
 		  		$(this).addClass('added');
 	  	}
-	  	
-	    
 
-	    
+
+
+
+	  
   	});
+
+  	if ($('.item-wishlist').html() == '') {
+	  		console.log('test');
+	  	}
 
 
 });
