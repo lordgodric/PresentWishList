@@ -363,6 +363,17 @@
 		"shouldRunBless": 0,
 		"useLibsass": false
 		},
+	"\/assets\/img\/amazon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1894,
+		"inputAbbreviatedPath": "\/assets\/img\/amazon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/amazon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/article-cover-1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -480,6 +491,17 @@
 		"initialSize": 56355,
 		"inputAbbreviatedPath": "\/assets\/img\/item-cover-9.png",
 		"outputAbbreviatedPath": "\/assets\/img\/item-cover-9.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/john-lewis.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2009,
+		"inputAbbreviatedPath": "\/assets\/img\/john-lewis.png",
+		"outputAbbreviatedPath": "\/assets\/img\/john-lewis.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -659,6 +681,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.jade": {
 		"compileDebug": 1,

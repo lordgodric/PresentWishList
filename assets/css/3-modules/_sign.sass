@@ -3,7 +3,12 @@
 	top: 0px
 	right: 0px
 	font-size: 14px
-	// word-spacing: 10px
+
+	@media only screen and (max-width: 768px)
+		// left: 40%
+		// padding-left: -180px
+		position: static
+		text-align: center
 
 	button
 		background-color: $btn-bg
@@ -26,7 +31,7 @@
 		display: block
 		height: 12px
 		width: 20px
-		margin-top: 7px
+		margin-top: 8px
 		background-image: url("../img/sign-icons.png")
 
 	.login

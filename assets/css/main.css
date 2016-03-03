@@ -308,6 +308,10 @@ input[type="button"] {
   top: 0px;
   right: 0px;
   font-size: 14px; }
+  @media only screen and (max-width: 768px) {
+    .sign {
+      position: static;
+      text-align: center; } }
   .sign button {
     background-color: #1b75ba;
     color: #f6f6f6;
@@ -326,7 +330,7 @@ input[type="button"] {
     display: block;
     height: 12px;
     width: 20px;
-    margin-top: 7px;
+    margin-top: 8px;
     background-image: url("../img/sign-icons.png"); }
   .sign .login {
     width: 75px;
@@ -486,21 +490,26 @@ input[type="button"] {
       display: inline-block;
       margin-bottom: 20px;
       margin-right: 5px;
-      text-align: left; }
+      text-align: left;
+      line-height: 16px; }
       .chose-your-presents .gallery .item .cover {
         height: 130px;
         width: 130px;
         border: 7px solid white;
         box-shadow: 0px 1px 3px 0px #646464; }
-      .chose-your-presents .gallery .item a {
+        .chose-your-presents .gallery .item .cover:hover {
+          border: 7px solid #39CCCC; }
+      .chose-your-presents .gallery .item .item-name {
         font-size: 14px;
-        line-height: 16px;
-        margin: 0;
+        margin: 10px 0 0 0;
+        display: block;
         font-family: "Signika";
-        font-weight: 300;
-        margin-top: 10px; }
+        font-weight: 300; }
       .chose-your-presents .gallery .item .item-price {
-        color: #d93655; }
+        color: #d93655;
+        line-height: 16px; }
+      .chose-your-presents .gallery .item .by {
+        display: none; }
     .chose-your-presents .gallery .item1 .cover {
       background-image: url("../img/item-cover-1.png");
       background-position: -20px -20px; }
@@ -560,6 +569,13 @@ input[type="button"] {
       font-family: "Ubuntu", sans-serif;
       font-weight: bold;
       padding-top: 11px; }
+      @media only screen and (max-width: 767px) {
+        .wish-list .wishlist-header .list-header-text {
+          font-size: 16px;
+          padding-top: 15px; } }
+      @media only screen and (max-width: 350px) {
+        .wish-list .wishlist-header .list-header-text {
+          font-size: 14px; } }
       .wish-list .wishlist-header .list-header-text:hover {
         color: #01FF70; }
     .wish-list .wishlist-header .link-icon {
@@ -627,11 +643,11 @@ input[type="button"] {
     padding: 0 10px; }
     .wish-list .item-wishlist .item {
       display: inline-block;
-      margin: 15px 0; }
+      margin: 15px 0;
+      text-align: left; }
       .wish-list .item-wishlist .item .cover {
         height: 70px;
         width: 70px;
-        background-color: red;
         border: 5px solid white;
         box-shadow: 0px 1px 3px 0px #646464;
         float: left;
@@ -641,10 +657,17 @@ input[type="button"] {
         font: 1.2em "Pacifico", cursive;
         color: #1b75ba;
         line-height: 20px;
-        text-align: left;
         display: block; }
         .wish-list .item-wishlist .item .item-name:hover {
           color: #FF851B; }
+      .wish-list .item-wishlist .item .item-price {
+        color: #d93655;
+        font: 16px "Ubuntu", serif;
+        font-weight: 500;
+        display: block; }
+      .wish-list .item-wishlist .item .by img {
+        vertical-align: middle;
+        margin-left: 5px; }
   .wish-list .share hr {
     margin: 5px 2px; }
   .wish-list .share .share-button {
@@ -670,7 +693,7 @@ input[type="button"] {
       @media only screen and (max-width: 767px) {
         .wish-list .share .share-button a {
           font-size: 16px;
-          padding: 15px 100px; } }
+          text-align: center; } }
 
 body {
   margin: 10px;

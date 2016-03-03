@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".item").click(function(){$(this).clone().appendTo($(".item-wishlist")),$(".item-wl-wrapper")})});
+$(document).ready(function(){$(".item").click(function(){function e(){$(".item:last > a > .cover").css("background",$(event.target).css("background"))}$(this).clone().appendTo($(".item-wishlist")),e();var t=$(this).children(".item-price").text();$(".item-price").hasClass("added")||($(".item-wishlist > .item > .item-price").text("Best Price: "+t),$(this).addClass("added"))})});

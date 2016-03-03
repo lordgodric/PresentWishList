@@ -18,6 +18,8 @@
 		border-radius: 0.3em
 		position: relative
 
+
+
 		.list-header-text
 			font-size: 20px
 			display: block
@@ -26,6 +28,13 @@
 			font-family: 'Ubuntu', sans-serif
 			font-weight: bold
 			padding-top: 11px
+
+			@media only screen and (max-width: $screen-xs-max)
+				font-size: 16px
+				padding-top: 15px
+
+			@media only screen and (max-width: 350px)
+				font-size: 14px
 
 			&:hover
 				color: $lime
@@ -111,11 +120,11 @@
 		.item	
 			display: inline-block
 			margin: 15px 0
+			text-align: left
 
 			.cover
 				height: 70px
 				width: 70px
-				background-color: red
 				border: 5px solid white
 				box-shadow: 0px 1px 3px 0px rgb(100,100,100)
 				float: left
@@ -126,12 +135,21 @@
 				font: 1.2em 'Pacifico', cursive
 				color: #1b75ba
 				line-height: 20px
-				text-align: left
 				display: block
+
 				&:hover
 					color: $orange
 
 			.item-price
+				color: $cherry
+				font: 16px "Ubuntu", serif
+				font-weight: 500
+				display: block
+
+			.by
+				img
+					vertical-align: middle
+					margin-left: 5px
 
 
 	.share
@@ -165,4 +183,5 @@
 
 				@media only screen and (max-width: $screen-xs-max)
 					font-size: 16px
-					padding: 15px 100px
+					// padding: 15px 100px
+					text-align: center
