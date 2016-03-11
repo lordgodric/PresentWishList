@@ -1,8 +1,34 @@
 $( document ).ready(function() {
-	
-	// Копіюємо всі блоки із галереї товарів до списку та трохи корегуємо їх
+
+	// Функція виводу(ховання) повідомлення щодо порожньої корзини
+	function listEmptyMessage() {
+
+		// Перевіряємо чи є щось в корзині з класом .item
+		if ($('.item-wishlist').children().hasClass('item')) {
+
+			// Якщо є то ми ховаємо повідомлення
+			// console.log('test');	
+			$('.list-empty').hide();
+
+		} else {
+
+			// Якщо блок порожній, то ми відображаємо повідомлення
+			$('.list-empty').show();
+			// console.log('test2');
+		}
+
+	}
+
+	//Функція копіювання обкладинки для товару
+  	function copyBackgroundImage() {
+		$('.item:last > .cover').css('background', $(event.target).css('background'));
+	}
+
+	// Копіюємо всі блоки із галереї товарів до списку та трішки редагуємо їх
 	// Клік по елементу
 	$(".item").click(function() {
+
+		
 
 		// Перемикаємо класс .mark по кліку
 		$(this).toggleClass("mark")
@@ -10,15 +36,11 @@ $( document ).ready(function() {
 		// Якщо клас наявний то добавляємо цей товар до нашого списку
 		if ($(this).hasClass('mark')) {
 
+
 			// Даємо видимість при першому кліку блоку .already
 			$(this).children('.already').css({
 				display: 'block'
 			});
-
-			//Функція копіювання обкладинки для товару
-		  	function copyBackgroundImage() {
-		  			$('.item:last > .cover').css('background', $(event.target).css('background'));
-	  		}
 
 		  	// Копіюємо обраний товар 
 		  	$(this).clone().appendTo($(".item-wishlist"));
@@ -71,7 +93,8 @@ $( document ).ready(function() {
 				console.log('error');
 			}
 
-		}
+		} 
+			listEmptyMessage();
 	  
   	});
 

@@ -608,6 +608,18 @@ input[type="button"] {
     .chose-your-presents .gallery .item9 .cover {
       background-image: url("../img/item-cover-9.png");
       background-position: 5px 5px; }
+    .chose-your-presents .gallery .item10 .cover {
+      background-image: url("../img/item-cover-9.png");
+      background-position: 5px 5px; }
+    .chose-your-presents .gallery .item11 .cover {
+      background-image: url("../img/item-cover-9.png");
+      background-position: 5px 5px; }
+    .chose-your-presents .gallery .item12 .cover {
+      background-image: url("../img/item-cover-9.png");
+      background-position: 5px 5px; }
+    .chose-your-presents .gallery .item13 .cover {
+      background-image: url("../img/item-cover-9.png");
+      background-position: 5px 5px; }
   .chose-your-presents .note p {
     display: block;
     text-align: center;
@@ -780,6 +792,11 @@ input[type="button"] {
         display: none; }
         .wish-list .item-wishlist .item .already p, .wish-list .item-wishlist .item .already img {
           display: none; }
+    .wish-list .item-wishlist .list-empty p {
+      font: 22px "Pacifico", sans-serif;
+      display: inline-block;
+      margin-top: 200px;
+      color: #a3acb3; }
   .wish-list .share hr {
     margin: 5px 2px; }
   .wish-list .share .share-button {
