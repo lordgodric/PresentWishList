@@ -423,6 +423,12 @@ input[type="button"] {
       min-width: 250px;
       padding: 10px;
       margin: 40px 0px 20px 0px; } }
+  @media only screen and (max-width: 1014px) {
+    .chose-your-presents {
+      max-width: 40%; } }
+  @media only screen and (max-width: 880px) {
+    .chose-your-presents {
+      max-width: 500px; } }
   .chose-your-presents .chose-header {
     font-size: 50px;
     color: #d93655;
@@ -483,50 +489,46 @@ input[type="button"] {
   .chose-your-presents .gallery {
     height: 660px;
     overflow-x: scroll;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-top: 3px; }
     .chose-your-presents .gallery .item {
-      width: 150px;
-      height: 215px;
+      width: 130px;
       display: inline-block;
       margin-bottom: 20px;
       margin-right: 5px;
       text-align: left;
       line-height: 16px;
-      position: relative; }
+      padding: 10px;
+      position: relative;
+      cursor: pointer; }
       .chose-your-presents .gallery .item:hover {
-        height: 330px;
         background-color: #fff;
-        vertical-align: top; }
+        vertical-align: top;
+        box-shadow: 0px 0px 5px 0px #646464; }
         .chose-your-presents .gallery .item:hover .by {
-          display: block;
+          display: none;
           color: #000; }
           .chose-your-presents .gallery .item:hover .by img {
             vertical-align: middle;
             margin-left: 3px; }
         .chose-your-presents .gallery .item:hover .add-to-list, .chose-your-presents .gallery .wish-list .item-wishlist .item:hover .category, .wish-list .item-wishlist .chose-your-presents .gallery .item:hover .category {
-          display: block;
+          display: none;
           margin: 10px 0 0 0; }
         .chose-your-presents .gallery .item:hover .item-price {
           display: block; }
-        .chose-your-presents .gallery .item:hover .gallery {
-          background-color: #ccc; }
         .chose-your-presents .gallery .item:hover .category {
-          display: block;
-          font-size: 14px;
-          margin: 3px 0 0 0;
-          font-family: "Signika";
-          font-weight: 300; }
+          display: none; }
         .chose-your-presents .gallery .item:hover .view-item {
           display: none; }
         .chose-your-presents .gallery .item:hover .more-options {
           display: none; }
       .chose-your-presents .gallery .item .cover {
-        height: 130px;
-        width: 130px;
+        height: 120px;
+        width: 110px;
+        margin: 0 auto;
         border: 7px solid white;
-        box-shadow: 0px 1px 3px 0px #646464; }
-        .chose-your-presents .gallery .item .cover:hover {
-          border: 7px solid #39CCCC; }
+        box-shadow: 0px 1px 3px 0px #646464;
+        margin-top: 10px; }
       .chose-your-presents .gallery .item .item-name {
         font-size: 14px;
         margin: 10px 0 0 0;
@@ -544,7 +546,7 @@ input[type="button"] {
         background: -webkit-linear-gradient(#43c623, #21a70a);
         background: -o-linear-gradient(#43c623, #21a70a);
         background: linear-gradient(#43c623, #21a70a);
-        box-shadow: 0px 0.5px 0px 0px black;
+        box-shadow: 0px 1px 3px 0px black;
         height: 40px;
         border-radius: 0.4em;
         font: 14px "Ubuntu", serif;
@@ -557,6 +559,28 @@ input[type="button"] {
         display: none; }
       .chose-your-presents .gallery .item .more-options {
         display: none; }
+      .chose-your-presents .gallery .item img {
+        position: absolute;
+        top: 30%;
+        right: 50%;
+        margin-right: -20px; }
+      .chose-your-presents .gallery .item .already {
+        width: 140px;
+        height: 228px;
+        background: #fff;
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 0px 3px 0px #646464;
+        padding: 5px;
+        filter: alpha(opacity=90);
+        opacity: 0.9; }
+        .chose-your-presents .gallery .item .already p {
+          text-align: center;
+          margin-top: 70%;
+          font: 16px "Signika", sans-serif;
+          color: #1b75ba; }
     .chose-your-presents .gallery .item1 .cover {
       background-image: url("../img/item-cover-1.png");
       background-position: -20px -20px; }
@@ -692,8 +716,7 @@ input[type="button"] {
       display: inline-block;
       margin: 15px 0;
       text-align: left;
-      border-radius: 0.4em;
-      position: relative; }
+      border-radius: 0.4em; }
       .wish-list .item-wishlist .item:hover {
         background-image: url("../img/shape-38.png");
         background-size: cover; }
@@ -728,7 +751,8 @@ input[type="button"] {
         box-shadow: 0px 1px 3px 0px #646464;
         float: left;
         display: block;
-        margin-right: 10px; }
+        margin-right: 10px;
+        background-position: cover; }
       .wish-list .item-wishlist .item .item-name {
         font: 1.2em "Pacifico", cursive;
         color: #1b75ba;
@@ -752,6 +776,10 @@ input[type="button"] {
         display: none; }
       .wish-list .item-wishlist .item .more-options {
         display: none; }
+      .wish-list .item-wishlist .item .already {
+        display: none; }
+        .wish-list .item-wishlist .item .already p, .wish-list .item-wishlist .item .already img {
+          display: none; }
   .wish-list .share hr {
     margin: 5px 2px; }
   .wish-list .share .share-button {

@@ -12,6 +12,12 @@
 		padding: 10px
 		margin: 40px 0px 20px 0px
 
+	@media only screen and (max-width: 1014px)
+		max-width: 40%
+
+	@media only screen and (max-width: 880px)
+		max-width: 500px
+
 	.chose-header
 		font-size: 50px
 		color: $cherry
@@ -89,24 +95,31 @@
 		height: 660px
 		overflow-x: scroll
 		overflow-x: hidden
+		padding-top: 3px
 
 		.item
-			width: 150px
-			height: 215px
+			width: 130px
+			// height: 200px
 			display: inline-block
 			margin-bottom: 20px
 			margin-right: 5px
 			text-align: left
 			line-height: 16px
-			position: relative			
+			padding: 10px
+			position: relative
+			cursor: pointer
 
 			&:hover
-				height: 330px
+				// height: 330px
 				background-color: #fff
 				vertical-align: top
+				box-shadow: 0px 0px 5px 0px rgb(100,100,100)
+
+				.cover
+					// position: relative
 
 				.by
-					display: block
+					display: none
 					color: #000
 
 					img
@@ -115,37 +128,30 @@
 
 
 				.add-to-list
-					display: block
+					display: none
 					margin: 10px 0 0 0
 
 				.item-price
 					display: block
 
-				.gallery
-					background-color: #ccc
-
 				.category
-					display: block
-					font-size: 14px
-					margin: 3px 0 0 0
-					font-family: 'Signika'
-					font-weight: 300
+					display: none
 
 				.view-item
 					display: none
 
 				.more-options
 					display: none
-					
+				
+
 
 			.cover
-				height: 130px
-				width: 130px
+				height: 120px
+				width: 110px
+				margin: 0 auto
 				border: 7px solid white
 				box-shadow: 0px 1px 3px 0px rgb(100,100,100)
-
-				&:hover
-					border: 7px solid $teal
+				margin-top: 10px
 
 			.item-name
 				font-size: 14px
@@ -167,7 +173,7 @@
 				background: -webkit-linear-gradient(#43c623, #21a70a) /* Standard syntax */
 				background: -o-linear-gradient(#43c623, #21a70a) /* Standard syntax */
 				background: linear-gradient(#43c623, #21a70a) /* Standard syntax */
-				box-shadow: 0px 0.5px 0px 0px rgb(0,0,0)
+				box-shadow: 0px 1px 3px 0px rgb(0,0,0)
 				height: 40px
 				border-radius: 0.4em
 				font: 14px  "Ubuntu", serif
@@ -184,6 +190,29 @@
 			.more-options
 				display: none
 
+			img
+				position: absolute
+				top: 30%
+				right: 50%
+				margin-right: -20px
+
+			.already
+				width: 140px
+				height: 228px
+				background: #fff
+				position: absolute
+				display: none
+				top: 0
+				left: 0
+				box-shadow: 0px 0px 3px 0px rgb(100,100,100)
+				padding: 5px
+				filter: alpha(opacity=90)
+				opacity: 0.90
+				p
+					text-align: center
+					margin-top: 70%
+					font: 16px "Signika", sans-serif
+					color: #1b75ba
 		.item1
 			.cover
 				background-image: url("../img/item-cover-1.png")

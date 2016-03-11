@@ -385,6 +385,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/checked.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 420,
+		"inputAbbreviatedPath": "\/assets\/img\/checked.png",
+		"outputAbbreviatedPath": "\/assets\/img\/checked.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/clip1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -429,13 +440,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/close.png": {
+	"\/assets\/img\/close-red-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 391,
-		"inputAbbreviatedPath": "\/assets\/img\/close.png",
-		"outputAbbreviatedPath": "\/assets\/img\/close.png",
+		"inputAbbreviatedPath": "\/assets\/img\/close-red-icon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/close-red-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -627,13 +638,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/refresh.png": {
+	"\/assets\/img\/refresh-red-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1211,
-		"inputAbbreviatedPath": "\/assets\/img\/refresh.png",
-		"outputAbbreviatedPath": "\/assets\/img\/refresh.png",
+		"initialSize": 305,
+		"inputAbbreviatedPath": "\/assets\/img\/refresh-red-icon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/refresh-red-icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -649,6 +660,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/search-red-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 383,
+		"inputAbbreviatedPath": "\/assets\/img\/search-red-icon.png",
+		"outputAbbreviatedPath": "\/assets\/img\/search-red-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/Shape-38.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -656,17 +678,6 @@
 		"initialSize": 402,
 		"inputAbbreviatedPath": "\/assets\/img\/Shape-38.png",
 		"outputAbbreviatedPath": "\/assets\/img\/Shape-38.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/Shape-39.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1184,
-		"inputAbbreviatedPath": "\/assets\/img\/Shape-39.png",
-		"outputAbbreviatedPath": "\/assets\/img\/Shape-39.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
