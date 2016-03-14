@@ -451,6 +451,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/dropdown-arrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 141,
+		"inputAbbreviatedPath": "\/assets\/img\/dropdown-arrow.png",
+		"outputAbbreviatedPath": "\/assets\/img\/dropdown-arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/item-cover-1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -638,13 +649,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/refresh-red-icon.png": {
+	"\/assets\/img\/re-assign.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 305,
-		"inputAbbreviatedPath": "\/assets\/img\/refresh-red-icon.png",
-		"outputAbbreviatedPath": "\/assets\/img\/refresh-red-icon.png",
+		"inputAbbreviatedPath": "\/assets\/img\/re-assign.png",
+		"outputAbbreviatedPath": "\/assets\/img\/re-assign.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

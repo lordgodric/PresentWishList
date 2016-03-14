@@ -1,5 +1,11 @@
 $( document ).ready(function() {
 
+	$(this).children('.more-options').click(function() {
+		$('.dropdown-content').show();
+	}, function() {
+		$('.dropdown-content').hide();
+	});
+
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини
 	function listEmptyMessage() {
 

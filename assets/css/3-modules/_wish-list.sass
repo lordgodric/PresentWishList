@@ -18,8 +18,6 @@
 		border-radius: 0.3em
 		position: relative
 
-
-
 		.list-header-text
 			font-size: 20px
 			display: block
@@ -124,6 +122,8 @@
 			text-align: left
 			border-radius: 0.4em
 			position: relative
+			max-height: 80px
+
 
 			&:hover
 				.red-bg
@@ -135,38 +135,71 @@
 					width: 100%
 					border-radius: 0.3em
 
-
 				.view-item
 					display: block
 					position: absolute
 					height: 40px
-					left: 30px
+					left: 40px
 					top: 20px
 					background: #f7f7f7
 					color: $hoverItem
-					font: 15px "Ubuntu", serif
+					font: 13px "Ubuntu", serif
 					font-weight: 500
 					text-transform: none
-					word-spacing: 0.1px
+					letter-spacing: 1px
+					padding-top: 3px
+
+					@media only screen and (max-width: 425px)
+						display: inline-block
+						top: 10px
+						width: 120px
+						margin: auto
+						left: 0
+						right: 0
+						text-align: center
+						height: 30px
 
 				.more-options
 					display: block
 					position: absolute
 					height: 40px
-					right: 20px
+					right: 10px
+					min-width: 139px
 					top: 20px
 					background: #f7f7f7
 					color: $hoverItem
-					font: 15px "Ubuntu", serif
+					font: 13px "Ubuntu", serif
 					text-transform: none
 					font-weight: 500
-					word-spacing: 0.1px
+					letter-spacing: 1px
 
-				.dropdown-content
-					&:hover
+					@media only screen and (max-width: 425px)
+						display: inline-block
+						top: 45px
+						width: 120px
+						left: 0
+						right: 0
+						text-align: center
+						margin: auto
+						height: 30px
+
+					&:hover .dropdown-content
 						display: block
+						border: 1px solid #de5872
+						border-top: none
+						margin-left: -1px
 
+						@media only screen and (max-width: 425px)
+							top: 28px
+							margin: 0px
+							margin-left: -1px
 
+						
+					&:hover
+						border: 1px solid #de5872
+						border-bottom: 1px solid #ebb5bf
+						border-bottom-left-radius: 0em
+						border-bottom-right-radius: 0em
 
 			.cover
 				height: 70px
@@ -184,6 +217,7 @@
 				line-height: 20px
 				display: block
 
+
 				&:hover
 					color: $orange
 
@@ -195,6 +229,7 @@
 
 			.by
 				display: block
+
 				img
 					vertical-align: middle
 					margin-left: 5px
@@ -205,11 +240,21 @@
 			.category
 				@extend .add-to-list
 
+			.search-red-icon
+				display: inline-block
+				vertical-align: middle
+				margin-right: 5px
+
 			.view-item
 				display: none
 
 			.more-options
 				display: none
+
+			.dropdown-arrow
+				display: inline-block
+				vertical-align: middle
+				margin-left: 5px
 			
 			.already
 				display: none
@@ -220,10 +265,51 @@
 			.dropdown-content
 				display: none
 				position: absolute
-				min-height: 100px
-				min-width: 100px
-				top: 0
+				min-height: 80px
+				top: 38px
 				left: 0
+				max-width: 100%
+				min-width: 137px
+				background-color: #f7f7f7
+				text-align: left
+				z-index: 30
+				border-bottom-left-radius: 0.3em
+				border-bottom-right-radius: 0.3em
+
+					
+
+			.remove
+				padding-left: 5px
+				height: 30px
+				border-top: 1px solid #ebb5bf
+				display: block
+				padding-top: 10px
+
+				
+
+				span
+					vertical-align: middle
+
+				.close-red-icon
+					display: inline-block
+					vertical-align: middle
+					margin-right: 5px
+
+			.re-assing
+				height: 30px
+				padding-left: 7px
+				border-top: 1px solid #ebb5bf
+				border-bottom-left-radius: 0.3em
+				border-bottom-right-radius: 0.3em
+				padding-top: 10px
+
+				span
+					vertical-align: middle
+
+				.re-assign-red-icon
+					display: inline-block
+					vertical-align: middle
+					margin-right: 7px
 
 		.list-empty
 			p
@@ -237,7 +323,6 @@
 		hr
 			margin: 5px 2px
 
-		
 		.share-button
 			margin-top: 25px
 			height: 91px
@@ -263,5 +348,4 @@
 
 				@media only screen and (max-width: $screen-xs-max)
 					font-size: 16px
-					// padding: 15px 100px
 					text-align: center
