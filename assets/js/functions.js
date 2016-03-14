@@ -6,29 +6,39 @@ $( document ).ready(function() {
 		// Перевіряємо чи є щось в корзині з класом .item
 		if ($('.item-wishlist').children().hasClass('item')) {
 
-			// Якщо є то ми ховаємо повідомлення
-			// console.log('test');	
+			// Якщо є, то ми ховаємо повідомлення
 			$('.list-empty').hide();
 
 		} else {
 
 			// Якщо блок порожній, то ми відображаємо повідомлення
 			$('.list-empty').show();
-			// console.log('test2');
 		}
 
 	}
 
 	//Функція копіювання обкладинки для товару
   	function copyBackgroundImage() {
-		$('.item:last > .cover').css('background', $(event.target).css('background'));
+  		var target = $( event.target )
+
+  		// Якщо натиснули на зображення товару
+  		if (target.is('.cover')) {
+			$('.item:last > .cover').css('background', $(event.target).css('background'));
+		
+		// Якщо натиснули на елемент товару
+  		} else {
+  			$('.item:last > .cover').css('background', $(target.parent('.item').find('.cover')).css('background'));
+
+  		// Якщо натиснули на саму обгортку товару
+  		} 
+  		if (target.is('.item')) {
+  			$('.item:last > .cover').css('background', $(target.find('.cover')).css('background'));
+  		}
 	}
 
 	// Копіюємо всі блоки із галереї товарів до списку та трішки редагуємо їх
 	// Клік по елементу
 	$(".item").click(function() {
-
-		
 
 		// Перемикаємо класс .mark по кліку
 		$(this).toggleClass("mark")
@@ -36,11 +46,8 @@ $( document ).ready(function() {
 		// Якщо клас наявний то добавляємо цей товар до нашого списку
 		if ($(this).hasClass('mark')) {
 
-
 			// Даємо видимість при першому кліку блоку .already
-			$(this).children('.already').css({
-				display: 'block'
-			});
+			$(this).children('.already').show();
 
 		  	// Копіюємо обраний товар 
 		  	$(this).clone().appendTo($(".item-wishlist"));
@@ -61,11 +68,9 @@ $( document ).ready(function() {
 			  		$(".item-wishlist > .item >", this).addClass('added');
 		  	}
 
-		// Якщо клас відсутній то убираємо цей товар із нашого списк
+		// Якщо клас відсутній то убираємо цей товар із нашого списку
 		} else {
-			$(this).children('.already').css({
-				display: 'none'
-			});
+			$(this).children('.already').hide();
 
 			// Видалимо класс .mark із елементів з корзини
 			$(".item-wishlist > .item").removeClass('mark')
