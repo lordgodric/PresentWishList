@@ -437,23 +437,34 @@ input[type="button"] {
     text-align: center; }
     .chose-your-presents .chose-header p {
       margin: 0; }
-  .chose-your-presents .steps button {
-    background-color: #d93655;
-    letter-spacing: 1px;
-    padding: 0 5px;
-    height: 25px;
-    float: left;
-    line-height: 0; }
-    .chose-your-presents .steps button a {
-      color: #f6f6f6;
-      letter-spacing: 0.1px; }
-      .chose-your-presents .steps button a:hover {
-        color: #FFDC00; }
-  .chose-your-presents .steps p {
-    text-align: center;
-    margin: 0 70px;
-    font-size: 20px;
-    color: #9f9e9e; }
+  .chose-your-presents .steps {
+    position: relative; }
+    .chose-your-presents .steps button {
+      background-color: #d93655;
+      letter-spacing: 1px;
+      padding: 0 5px;
+      height: 25px;
+      position: absolute;
+      left: 0; }
+      .chose-your-presents .steps button a {
+        color: #f6f6f6;
+        letter-spacing: 0.1px; }
+        .chose-your-presents .steps button a:hover {
+          color: #FFDC00; }
+        .chose-your-presents .steps button a img {
+          display: inline-block; }
+        .chose-your-presents .steps button a .back {
+          display: inline-block;
+          position: relative;
+          top: -2px; }
+    .chose-your-presents .steps p {
+      display: inline-block;
+      text-align: center;
+      margin: 0 70px;
+      font-size: 20px;
+      color: #9f9e9e; }
+    .chose-your-presents .steps hr {
+      margin: 10px 0 20px 0; }
   .chose-your-presents .search p {
     font-size: 16px;
     color: #8f8f8f;
@@ -534,7 +545,8 @@ input[type="button"] {
         margin: 10px 0 0 0;
         display: block;
         font-family: "Signika";
-        font-weight: 300; }
+        font-weight: 300;
+        color: #1b75ba; }
       .chose-your-presents .gallery .item .item-price {
         color: #d93655;
         line-height: 16px; }
@@ -566,7 +578,7 @@ input[type="button"] {
         margin-right: -20px; }
       .chose-your-presents .gallery .item .already {
         width: 140px;
-        height: 225px;
+        height: 228px;
         background: #fff;
         position: absolute;
         display: none;
@@ -638,7 +650,10 @@ input[type="button"] {
   height: 974px;
   vertical-align: top;
   border-radius: 0.3em;
-  box-shadow: 0px 0px 8px 0px #646464; }
+  box-shadow: 0px 0px 8px 0px #646464;
+  background-image: url("../img/lines.png");
+  background-position: -2px 38px;
+  background-color: #fff; }
   .wish-list .wishlist-header {
     height: 60px;
     width: 100%;
@@ -661,8 +676,6 @@ input[type="button"] {
       @media only screen and (max-width: 350px) {
         .wish-list .wishlist-header .list-header-text {
           font-size: 14px; } }
-      .wish-list .wishlist-header .list-header-text:hover {
-        color: #01FF70; }
     .wish-list .wishlist-header .link-icon {
       position: absolute;
       left: 15px;
@@ -694,7 +707,6 @@ input[type="button"] {
   .wish-list .article {
     position: relative; }
     .wish-list .article .pages {
-      background-image: url("../img/pages2.jpg");
       height: 13px;
       width: 100%;
       background-position: -2px; }
@@ -702,7 +714,7 @@ input[type="button"] {
       float: left;
       padding: 10px; }
     .wish-list .article .article-text {
-      text-align: justify;
+      text-align: left;
       font: 1.2em "Pacifico", cursive;
       margin-top: 5px;
       line-height: 25px;
@@ -725,7 +737,9 @@ input[type="button"] {
     overflow-x: scroll;
     overflow-x: hidden;
     height: 635px;
-    padding: 0 10px; }
+    padding: 0 25px;
+    margin-left: -15px;
+    padding-left: 28px; }
     .wish-list .item-wishlist .item {
       display: inline-block;
       margin: 15px 0;
@@ -739,17 +753,17 @@ input[type="button"] {
         position: absolute;
         top: 0;
         height: 82px;
-        width: 100%;
+        width: 105%;
         border-radius: 0.3em; }
       .wish-list .item-wishlist .item:hover .view-item {
         display: block;
         position: absolute;
         height: 40px;
-        left: 40px;
+        left: 30px;
         top: 20px;
         background: #f7f7f7;
         color: #d93655;
-        font: 13px "Ubuntu", serif;
+        font: 12px "Ubuntu", serif;
         font-weight: 500;
         text-transform: none;
         letter-spacing: 1px;
@@ -758,7 +772,6 @@ input[type="button"] {
           .wish-list .item-wishlist .item:hover .view-item {
             display: inline-block;
             top: 10px;
-            width: 120px;
             margin: auto;
             left: 0;
             right: 0;
@@ -769,11 +782,10 @@ input[type="button"] {
         position: absolute;
         height: 40px;
         right: 10px;
-        min-width: 139px;
         top: 20px;
         background: #f7f7f7;
         color: #d93655;
-        font: 13px "Ubuntu", serif;
+        font: 12px "Ubuntu", serif;
         text-transform: none;
         font-weight: 500;
         letter-spacing: 1px; }
@@ -781,7 +793,6 @@ input[type="button"] {
           .wish-list .item-wishlist .item:hover .more-options {
             display: inline-block;
             top: 45px;
-            width: 120px;
             left: 0;
             right: 0;
             text-align: center;
@@ -802,6 +813,11 @@ input[type="button"] {
           border-bottom: 1px solid #ebb5bf;
           border-bottom-left-radius: 0em;
           border-bottom-right-radius: 0em; }
+      .wish-list .item-wishlist .item .clip {
+        position: absolute;
+        left: -18px;
+        top: 10px;
+        z-index: 330; }
       .wish-list .item-wishlist .item .cover {
         height: 70px;
         width: 70px;
@@ -810,7 +826,8 @@ input[type="button"] {
         float: left;
         display: block;
         margin-right: 10px;
-        background-position: cover; }
+        background-position: cover;
+        position: relative; }
       .wish-list .item-wishlist .item .item-name {
         font: 1.2em "Pacifico", cursive;
         color: #1b75ba;
@@ -853,7 +870,6 @@ input[type="button"] {
         top: 38px;
         left: 0;
         max-width: 100%;
-        min-width: 137px;
         background-color: #f7f7f7;
         text-align: left;
         z-index: 30;
@@ -884,11 +900,18 @@ input[type="button"] {
           display: inline-block;
           vertical-align: middle;
           margin-right: 7px; }
-    .wish-list .item-wishlist .list-empty p {
-      font: 22px "Pacifico", sans-serif;
-      display: inline-block;
-      margin-top: 200px;
-      color: #a3acb3; }
+    .wish-list .item-wishlist .list-empty {
+      position: relative; }
+      .wish-list .item-wishlist .list-empty p {
+        font: 22px "Pacifico", sans-serif;
+        display: inline-block;
+        margin-top: 200px;
+        color: #a3acb3; }
+      .wish-list .item-wishlist .list-empty .logo-transparent {
+        position: absolute;
+        bottom: -200px;
+        margin: auto;
+        width: 100%; }
   .wish-list .share hr {
     margin: 5px 2px; }
   .wish-list .share .share-button {
@@ -960,16 +983,16 @@ body {
     .page-home article:last-child {
       margin-bottom: 0px; }
 
-.l-header, .chose-your-presents, .wish-list, .l-header .l-header-content {
+.l-header, .chose-your-presents, .l-header .l-header-content {
   background-image: url("../img/pattern.png"); }
-  .l-header .l-header-content, .chose-your-presents .l-header-content, .wish-list .l-header-content {
+  .l-header .l-header-content, .chose-your-presents .l-header-content {
     max-width: 960px;
     background-color: #f6f6f6;
     margin: 0 auto;
     height: 135px;
     position: relative; }
     @media only screen and (max-width: 767px) {
-      .l-header .l-header-content, .chose-your-presents .l-header-content, .wish-list .l-header-content {
+      .l-header .l-header-content, .chose-your-presents .l-header-content {
         height: 250px; } }
 
 .l-main {

@@ -385,6 +385,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/back-arrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153,
+		"inputAbbreviatedPath": "\/assets\/img\/back-arrow.png",
+		"outputAbbreviatedPath": "\/assets\/img\/back-arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/checked.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -572,6 +583,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/lines.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134326,
+		"inputAbbreviatedPath": "\/assets\/img\/lines.png",
+		"outputAbbreviatedPath": "\/assets\/img\/lines.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/link-icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -579,6 +601,17 @@
 		"initialSize": 516,
 		"inputAbbreviatedPath": "\/assets\/img\/link-icon.png",
 		"outputAbbreviatedPath": "\/assets\/img\/link-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/logo-transparent.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6759,
+		"inputAbbreviatedPath": "\/assets\/img\/logo-transparent.png",
+		"outputAbbreviatedPath": "\/assets\/img\/logo-transparent.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

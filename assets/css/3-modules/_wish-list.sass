@@ -1,5 +1,5 @@
 .wish-list
-	@extend .l-header
+	// @extend .l-header
 	display: inline-block
 	margin-top: 40px
 	margin-bottom: 40px
@@ -9,6 +9,9 @@
 	vertical-align: top
 	border-radius: 0.3em
 	box-shadow: 0px 0px 8px 0px rgb(100,100,100)
+	background-image: url("../img/lines.png")
+	background-position: -2px 38px
+	background-color: #fff
 
 	.wishlist-header
 		height: 60px
@@ -35,7 +38,7 @@
 				font-size: 14px
 
 			&:hover
-				color: $lime
+				// color: $lime
 
 		.link-icon
 			position: absolute
@@ -43,7 +46,7 @@
 			top: 8px
 			height: 21px
 			width: 21px
-			padding: 10px 
+			padding: 10px
 			border: 1px solid #333
 			border-radius: 0.3em
 			box-shadow: 0px 1px 0px 0px rgb(120,120,120), 0px 1px 0px 0px rgb(150,150,150) inset, -0.8px 0px 1px 0px rgb(75,75,75) inset
@@ -67,7 +70,7 @@
 
 			img
 				height: 21px
-			
+
 			&:hover
 				border: 1px solid #000
 
@@ -75,7 +78,7 @@
 		position: relative
 
 		.pages
-			background-image: url("../img/pages2.jpg")
+			// background-image: url("../img/pages2.jpg")
 			height: 13px
 			width: 100%
 			background-position: -2px
@@ -83,9 +86,9 @@
 		.article-cover-1
 			float: left
 			padding: 10px
-		
+
 		.article-text
-			text-align: justify
+			text-align: left
 			font: 1.2em 'Pacifico', cursive
 			margin-top: 5px
 			line-height: 25px
@@ -110,20 +113,23 @@
 			margin: 5px 2px
 
 	.item-wishlist
+		// overflow-y: scroll
+		// overflow-x: visible
 		overflow-x: scroll
 		overflow-x: hidden
 		height: 635px
-		padding: 0 10px
+		padding: 0 25px
+		margin-left: -15px
+		padding-left: 28px
+		// margin-right: 15px
 
-
-		.item	
+		.item
 			display: inline-block
 			margin: 15px 0
 			text-align: left
 			border-radius: 0.4em
 			position: relative
 			max-height: 80px
-
 
 			&:hover
 				.red-bg
@@ -132,27 +138,28 @@
 					position: absolute
 					top: 0
 					height: 82px
-					width: 100%
+					width: 105%
 					border-radius: 0.3em
 
 				.view-item
 					display: block
 					position: absolute
 					height: 40px
-					left: 40px
+					left: 30px
 					top: 20px
 					background: #f7f7f7
 					color: $hoverItem
-					font: 13px "Ubuntu", serif
+					font: 12px "Ubuntu", serif
 					font-weight: 500
 					text-transform: none
 					letter-spacing: 1px
 					padding-top: 3px
+					// max-width: 110px
 
 					@media only screen and (max-width: 425px)
 						display: inline-block
 						top: 10px
-						width: 120px
+						// width: 120px
 						margin: auto
 						left: 0
 						right: 0
@@ -164,11 +171,11 @@
 					position: absolute
 					height: 40px
 					right: 10px
-					min-width: 139px
+					// min-width: 139px
 					top: 20px
 					background: #f7f7f7
 					color: $hoverItem
-					font: 13px "Ubuntu", serif
+					font: 12px "Ubuntu", serif
 					text-transform: none
 					font-weight: 500
 					letter-spacing: 1px
@@ -176,7 +183,7 @@
 					@media only screen and (max-width: 425px)
 						display: inline-block
 						top: 45px
-						width: 120px
+						// width: 120px
 						left: 0
 						right: 0
 						text-align: center
@@ -194,12 +201,17 @@
 							margin: 0px
 							margin-left: -1px
 
-						
 					&:hover
 						border: 1px solid #de5872
 						border-bottom: 1px solid #ebb5bf
 						border-bottom-left-radius: 0em
 						border-bottom-right-radius: 0em
+
+			.clip
+				position: absolute
+				left: -18px
+				top: 10px
+				z-index: 330
 
 			.cover
 				height: 70px
@@ -210,6 +222,7 @@
 				display: block
 				margin-right: 10px
 				background-position: cover
+				position: relative
 
 			.item-name
 				font: 1.2em 'Pacifico', cursive
@@ -255,7 +268,7 @@
 				display: inline-block
 				vertical-align: middle
 				margin-left: 5px
-			
+
 			.already
 				display: none
 
@@ -269,14 +282,13 @@
 				top: 38px
 				left: 0
 				max-width: 100%
-				min-width: 137px
 				background-color: #f7f7f7
 				text-align: left
 				z-index: 30
 				border-bottom-left-radius: 0.3em
 				border-bottom-right-radius: 0.3em
 
-					
+
 
 			.remove
 				padding-left: 5px
@@ -285,7 +297,7 @@
 				display: block
 				padding-top: 10px
 
-				
+
 
 				span
 					vertical-align: middle
@@ -312,11 +324,19 @@
 					margin-right: 7px
 
 		.list-empty
+			position: relative
+
 			p
 				font: 22px 'Pacifico', sans-serif
 				display: inline-block
 				margin-top: 200px
 				color: #a3acb3
+
+			.logo-transparent
+				position: absolute
+				bottom: -200px
+				margin: auto
+				width: 100%
 
 	.share
 
@@ -334,14 +354,14 @@
 			font: bold 28px 'Ubuntu', sans-serif
 			line-height: 90px
 			vertical-align: middle
-			
+
 			a
 				border: 1px solid #333
 				border-radius: 0.2em
 				padding: 10px 75px
 				box-shadow: 0px 1px 0px 0px rgb(120,120,120), 0px 1px 0px 0px rgb(150,150,150) inset, -0.8px 0px 1px 0px rgb(75,75,75) inset
 				color: #fff
-				
+
 				&:hover
 					color: $lime
 					border: 1px solid #000

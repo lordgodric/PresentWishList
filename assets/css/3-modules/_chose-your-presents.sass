@@ -29,14 +29,15 @@
 			margin: 0
 
 	.steps
+		position: relative
 
 		button
 			background-color: $cherry
 			letter-spacing: 1px
 			padding: 0 5px
 			height: 25px
-			float: left
-			line-height: 0
+			position: absolute
+			left: 0
 
 			a
 				color: $white
@@ -45,11 +46,26 @@
 				&:hover
 					color: $yellow
 
+				img
+					display: inline-block
+
+				.back
+					display: inline-block
+					position: relative
+					top: -2px
+					// margin: 0 70px
+					// font-size: 20px
+					// color: $text
 		p
+			display: inline-block
 			text-align: center
+			// width: 100px
 			margin: 0 70px
 			font-size: 20px
 			color: $text
+
+		hr
+			margin: 10px 0 20px 0
 
 	.search
 		p
@@ -159,6 +175,7 @@
 				display: block
 				font-family: 'Signika'
 				font-weight: 300
+				color: #1b75ba
 
 			.item-price
 				color: $cherry
@@ -198,7 +215,7 @@
 
 			.already
 				width: 140px
-				height: 225px
+				height: 228px
 				background: #fff
 				position: absolute
 				display: none
@@ -208,6 +225,7 @@
 				padding: 5px
 				filter: alpha(opacity=90)
 				opacity: 0.90
+
 				p
 					text-align: center
 					margin-top: 70%

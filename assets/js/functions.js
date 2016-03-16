@@ -1,10 +1,10 @@
 $( document ).ready(function() {
 
-	$(this).children('.more-options').click(function() {
-		$('.dropdown-content').show();
-	}, function() {
-		$('.dropdown-content').hide();
-	});
+	// $(this).children('.more-options').click(function() {
+	// 	$('.dropdown-content').show();
+	// }, function() {
+	// 	$('.dropdown-content').hide();
+	// });
 
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини
 	function listEmptyMessage() {
@@ -30,13 +30,13 @@ $( document ).ready(function() {
   		// Якщо натиснули на зображення товару
   		if (target.is('.cover')) {
 			$('.item:last > .cover').css('background', $(event.target).css('background'));
-		
+
 		// Якщо натиснули на елемент товару
   		} else {
   			$('.item:last > .cover').css('background', $(target.parent('.item').find('.cover')).css('background'));
 
   		// Якщо натиснули на саму обгортку товару
-  		} 
+  		}
   		if (target.is('.item')) {
   			$('.item:last > .cover').css('background', $(target.find('.cover')).css('background'));
   		}
@@ -55,9 +55,12 @@ $( document ).ready(function() {
 			// Даємо видимість при першому кліку блоку .already
 			$(this).children('.already').show();
 
-		  	// Копіюємо обраний товар 
-		  	$(this).clone().appendTo($(".item-wishlist"));
-		  	
+			// Генеруємо випадкове число для скріпки
+			var randomNumber = Math.floor(Math.random() * 4) + 1
+
+		  	// Копіюємо обраний товар та добавляємо до копії нашу випадкову скріпку
+		  	$(this).clone().appendTo($(".item-wishlist")).prepend('<img class="clip"src="assets/img/clip' + randomNumber + '.png"/>');
+
 	  		//Виклик функції копіювання обкладинки для товару
 		  	copyBackgroundImage();
 
@@ -84,7 +87,7 @@ $( document ).ready(function() {
 			// Перевіримо чи є в корзині наш товар
 			if ($('.item-wishlist').find($(this))) {
 
-				// Візьмемо назву класів блоку в галереї 
+				// Візьмемо назву класів блоку в галереї
 				var itemInGallery = $(this).attr('class');
 
 				// Переберемо всі елементи в корзині
@@ -104,9 +107,9 @@ $( document ).ready(function() {
 				console.log('error');
 			}
 
-		} 
+		}
 			listEmptyMessage();
-	  
+
   	});
 
 });
