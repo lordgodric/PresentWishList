@@ -132,6 +132,9 @@
 			max-height: 80px
 
 			&:hover
+				.cover
+					border-radius: 0.3em
+
 				.red-bg
 					background-image: url("../img/shape-38.png")
 					background-size: cover
@@ -154,14 +157,16 @@
 					text-transform: none
 					letter-spacing: 1px
 					padding-top: 3px
+					min-width: 110px
 					// max-width: 110px
 
 					@media only screen and (max-width: 425px)
 						display: inline-block
 						top: 10px
 						// width: 120px
-						margin: auto
-						left: 0
+						left: -60px
+						margin-left: 50%
+						// left: 0
 						right: 0
 						text-align: center
 						height: 30px
@@ -171,7 +176,7 @@
 					position: absolute
 					height: 40px
 					right: 10px
-					// min-width: 139px
+					min-width: 138px
 					top: 20px
 					background: #f7f7f7
 					color: $hoverItem
@@ -184,10 +189,11 @@
 						display: inline-block
 						top: 45px
 						// width: 120px
-						left: 0
+						left: -70px
+						margin-left: 50%
 						right: 0
 						text-align: center
-						margin: auto
+						// margin: auto
 						height: 30px
 
 					&:hover .dropdown-content
@@ -281,7 +287,7 @@
 				min-height: 80px
 				top: 38px
 				left: 0
-				max-width: 100%
+				min-width: 100%
 				background-color: #f7f7f7
 				text-align: left
 				z-index: 30

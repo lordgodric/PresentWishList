@@ -747,6 +747,8 @@ input[type="button"] {
       border-radius: 0.4em;
       position: relative;
       max-height: 80px; }
+      .wish-list .item-wishlist .item:hover .cover {
+        border-radius: 0.3em; }
       .wish-list .item-wishlist .item:hover .red-bg {
         background-image: url("../img/shape-38.png");
         background-size: cover;
@@ -767,13 +769,14 @@ input[type="button"] {
         font-weight: 500;
         text-transform: none;
         letter-spacing: 1px;
-        padding-top: 3px; }
+        padding-top: 3px;
+        min-width: 110px; }
         @media only screen and (max-width: 425px) {
           .wish-list .item-wishlist .item:hover .view-item {
             display: inline-block;
             top: 10px;
-            margin: auto;
-            left: 0;
+            left: -60px;
+            margin-left: 50%;
             right: 0;
             text-align: center;
             height: 30px; } }
@@ -782,6 +785,7 @@ input[type="button"] {
         position: absolute;
         height: 40px;
         right: 10px;
+        min-width: 138px;
         top: 20px;
         background: #f7f7f7;
         color: #d93655;
@@ -793,10 +797,10 @@ input[type="button"] {
           .wish-list .item-wishlist .item:hover .more-options {
             display: inline-block;
             top: 45px;
-            left: 0;
+            left: -70px;
+            margin-left: 50%;
             right: 0;
             text-align: center;
-            margin: auto;
             height: 30px; } }
         .wish-list .item-wishlist .item:hover .more-options:hover .dropdown-content {
           display: block;
@@ -869,7 +873,7 @@ input[type="button"] {
         min-height: 80px;
         top: 38px;
         left: 0;
-        max-width: 100%;
+        min-width: 100%;
         background-color: #f7f7f7;
         text-align: left;
         z-index: 30;
