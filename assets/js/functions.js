@@ -1,10 +1,10 @@
 $( document ).ready(function() {
 
-	// $(this).children('.more-options').click(function() {
-	// 	$('.dropdown-content').show();
-	// }, function() {
-	// 	$('.dropdown-content').hide();
-	// });
+	$(this).children('.more-options').click(function() {
+		$('.dropdown-content').show();
+	}, function() {
+		$('.dropdown-content').hide();
+	});
 
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини
 	function listEmptyMessage() {
@@ -25,20 +25,34 @@ $( document ).ready(function() {
 
 	//Функція копіювання обкладинки для товару
   	function copyBackgroundImage() {
-  		var target = $( event.target )
+  		var target = $( event.target ) || $(event.srcElement)
 
   		// Якщо натиснули на зображення товару
   		if (target.is('.cover')) {
+  			console.log('zobr');
 			$('.item:last > .cover').css('background', $(event.target).css('background'));
 
 		// Якщо натиснули на елемент товару
   		} else {
-  			$('.item:last > .cover').css('background', $(target.parent('.item').find('.cover')).css('background'));
+  			var bg = $(event.srcElement).parent('.item').find('.cover').css('background-image');
+  			$('.item:last > .cover').css({
+  				'background' : bg,
+  				'background-position' : 'center',
+  			});
+  			if ($(event.srcElement).is('.item')) {
+  				var bg = $(event.srcElement).find('.cover').css('background-image');
+  				$('.item:last > .cover').css({
+  				'background' : bg,
+  				'background-position' : 'center',
+  			});
+  			}
 
   		// Якщо натиснули на саму обгортку товару
-  		}
+  		}	
   		if (target.is('.item')) {
+  			console.log('obg');
   			$('.item:last > .cover').css('background', $(target.find('.cover')).css('background'));
+  			console.log($('event.srcElement'));
   		}
 	}
 
@@ -111,5 +125,8 @@ $( document ).ready(function() {
 			listEmptyMessage();
 
   	});
+	
+  		
+  		
 
 });
