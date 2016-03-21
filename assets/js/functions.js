@@ -73,6 +73,7 @@ $( document ).ready(function() {
 
 		  	// Копіюємо обраний товар та добавляємо до копії нашу випадкову скріпку
 		  	$(this).clone().appendTo($(".item-wishlist")).prepend('<img class="clip"src="assets/img/clip' + randomNumber + '.png"/>');
+		  	$('.item-wishlist > .item > .item-name').text('Remote control Tractor');
 
 	  		//Виклик функції копіювання обкладинки для товару
 		  	copyBackgroundImage();
