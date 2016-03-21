@@ -1,10 +1,6 @@
 $( document ).ready(function() {
 
-	$(this).children('.more-options').click(function() {
-		$('.dropdown-content').show();
-	}, function() {
-		$('.dropdown-content').hide();
-	});
+	
 
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини
 	function listEmptyMessage() {
@@ -26,6 +22,9 @@ $( document ).ready(function() {
 	//Функція копіювання обкладинки для товару
   	function copyBackgroundImage() {
   		var target = $( event.target ) || $(event.srcElement)
+
+  		console.log($( event.target ));
+  		console.log($(event.srcElement));
 
   		// Якщо натиснули на зображення товару
   		if (target.is('.cover')) {

@@ -306,8 +306,7 @@ input[type="button"] {
 .sign {
   position: absolute;
   top: 0px;
-  right: 0px;
-  font-size: 14px; }
+  right: 0px; }
   @media only screen and (max-width: 768px) {
     .sign {
       position: static;
@@ -319,6 +318,8 @@ input[type="button"] {
     border: 0;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px; }
+    .sign button span {
+      font-size: 11px; }
   .sign .register {
     width: 105px;
     padding: 0px 10px;
@@ -802,6 +803,21 @@ input[type="button"] {
             right: 0;
             text-align: center;
             height: 30px; } }
+        .wish-list .item-wishlist .item:hover .more-options:hover .dropdown-content {
+          display: block;
+          border: 1px solid #de5872;
+          border-top: none;
+          margin-left: -1px; }
+          @media only screen and (max-width: 425px) {
+            .wish-list .item-wishlist .item:hover .more-options:hover .dropdown-content {
+              top: 28px;
+              margin: 0px;
+              margin-left: -1px; } }
+        .wish-list .item-wishlist .item:hover .more-options:hover {
+          border: 1px solid #de5872;
+          border-bottom: 1px solid #ebb5bf;
+          border-bottom-left-radius: 0em;
+          border-bottom-right-radius: 0em; }
       .wish-list .item-wishlist .item .clip {
         position: absolute;
         left: -18px;
@@ -852,6 +868,18 @@ input[type="button"] {
         display: none; }
         .wish-list .item-wishlist .item .already p, .wish-list .item-wishlist .item .already img {
           display: none; }
+      .wish-list .item-wishlist .item .dropdown-content {
+        display: none;
+        position: absolute;
+        min-height: 80px;
+        top: 38px;
+        left: 0;
+        min-width: 100%;
+        background-color: #f7f7f7;
+        text-align: left;
+        z-index: 30;
+        border-bottom-left-radius: 0.3em;
+        border-bottom-right-radius: 0.3em; }
       .wish-list .item-wishlist .item .remove {
         padding-left: 5px;
         height: 30px;
