@@ -1,7 +1,5 @@
 $( document ).ready(function() {
 
-	
-
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини
 	function listEmptyMessage() {
 
@@ -54,6 +52,17 @@ $( document ).ready(function() {
   			console.log($('event.srcElement'));
   		}
 	}
+
+	// Адаптивне меню для мобільного вигляду
+	$('.hamburger').click(function(event) {
+		console.log('test');
+		$('.l-header-content').toggleClass('l-header-mini');
+		if (!$('.l-header-content').hasClass('l-header-mini')) {
+			$('.header-nav').hide();
+		} else {
+			$('.header-nav').show();
+		}
+	});
 
 	// Копіюємо всі блоки із галереї товарів до списку та трішки редагуємо їх
 	// Клік по елементу

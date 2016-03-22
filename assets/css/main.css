@@ -356,8 +356,11 @@ input[type="button"] {
   top: 60px; }
   @media only screen and (max-width: 767px) {
     .header-nav {
-      margin: 100px 50% 0 0;
-      right: -60px; } }
+      position: static;
+      margin-top: 30px;
+      text-align: center;
+      width: 100%;
+      display: none; } }
   .header-nav a {
     margin-left: 70px;
     font-size: 18px;
@@ -365,8 +368,17 @@ input[type="button"] {
     @media only screen and (max-width: 767px) {
       .header-nav a {
         display: block;
-        width: 100%;
         margin-left: 0; } }
+
+.hamburger {
+  display: none;
+  position: static; }
+  .hamburger .fa-bars {
+    cursor: pointer; }
+  @media only screen and (max-width: 767px) {
+    .hamburger {
+      display: block;
+      text-align: center; } }
 
 .footer-nav {
   text-align: center; }
@@ -378,6 +390,9 @@ input[type="button"] {
       display: inline-block;
       margin: 13px;
       font-weight: bold; }
+      @media only screen and (max-width: 767px) {
+        .footer-nav ul li {
+          display: block; } }
 
 .social {
   width: 140px;
@@ -714,15 +729,18 @@ input[type="button"] {
       width: 100%;
       background-position: -2px; }
     .wish-list .article .article-cover-1 {
-      float: left;
-      padding: 10px; }
+      display: inline-block;
+      width: 110px;
+      margin-top: 10px; }
     .wish-list .article .article-text {
+      display: inline-block;
       text-align: left;
       font: 1.2em "Pacifico", cursive;
-      margin-top: 5px;
+      margin-top: -10px;
       line-height: 25px;
       color: #464545;
-      padding: 10px 30px 10px 10px; }
+      padding: 10px 30px 10px 10px;
+      width: 180px; }
     .wish-list .article .read-more {
       text-decoration: underline;
       font: 12px "Ubuntu", serif;
@@ -1001,7 +1019,12 @@ body {
     position: relative; }
     @media only screen and (max-width: 767px) {
       .l-header .l-header-content, .chose-your-presents .l-header-content {
-        height: 250px; } }
+        height: 200px; } }
+    @media only screen and (min-width: 768px) {
+      .l-header .l-header-content, .chose-your-presents .l-header-content {
+        display: block; } }
+  .l-header .l-header-mini, .chose-your-presents .l-header-mini {
+    height: 330px; }
 
 .l-main {
   background-image: url("../../assets/img/main-bg.png"); }

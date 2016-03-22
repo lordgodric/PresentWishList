@@ -3,6 +3,7 @@ html(lang="en")
   head
     title= PresentWishList
     meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
     link(rel="stylesheet", href="assets/css/main.css")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Signika")
     link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Signika:300")
@@ -24,10 +25,13 @@ html(lang="en")
               span login
         a(href="#").headerLogo
           img(src="assets/img/logo.png", alt="header logo")
+        .hamburger
+          <i class="fa fa-bars fa-2x"></i>
         .header-nav
           a(href="#").text-uppercase.nav-font home
           a(href="#").text-uppercase.nav-font create a list
           a(href="#").text-uppercase.nav-font now it works
+        
 
     .l-main
       .l-main-content

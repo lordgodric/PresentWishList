@@ -5,8 +5,11 @@
 	top: 60px
 	
 	@media only screen and (max-width: $screen-xs-max)
-		margin: 100px 50% 0 0
-		right: -60px
+		position: static
+		margin-top: 30px
+		text-align: center
+		width: 100%
+		display: none
 
 	a
 		margin-left: 70px
@@ -15,8 +18,18 @@
 
 		@media only screen and (max-width: $screen-xs-max)
 			display: block
-			width: 100%
 			margin-left: 0
+
+.hamburger
+	display: none
+	position: static
+
+	.fa-bars
+		cursor: pointer
+
+	@media only screen and (max-width: $screen-xs-max)
+		display: block
+		text-align: center
 
 .footer-nav
 	text-align: center
@@ -30,3 +43,6 @@
 			display: inline-block
 			margin: 13px 
 			font-weight: bold
+
+			@media only screen and (max-width: $screen-xs-max)
+				display: block
