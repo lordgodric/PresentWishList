@@ -1,10 +1,17 @@
 $( document ).ready(function() {
-	
-	$('.item-wishlist > .item').mouseover(function() {
-		$('.red-bg').css('display', 'block');;
-	}, function() {
-		console.log('test2');
-	});
+
+
+	// Випадаючий список для кнопки more-options
+	// $('.red-bg').on(function() {
+	// 	$('.more-options').click(function() {
+	// 		$('.dropdown-content').toggleClass('dropdown-content-show');
+	// 	});
+	// }, function() {});
+
+	// $(".red-bg").on("hover", function () {
+    
+	// 	console.log('test');
+	// });
 
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини
 	function listEmptyMessage() {
@@ -26,8 +33,8 @@ $( document ).ready(function() {
   	function copyBackgroundImage() {
   		var target = $( event.target ) || $(event.srcElement)
 
-  		console.log($( event.target ));
-  		console.log($(event.srcElement));
+  		// console.log($(event.target));
+  		// console.log($(event.srcElement));
 
   		// Якщо натиснули на зображення товару
   		if (target.is('.cover')) {
@@ -72,6 +79,7 @@ $( document ).ready(function() {
 	// Копіюємо всі блоки із галереї товарів до списку та трішки редагуємо їх
 	// Клік по елементу
 	$(".item").click(function() {
+	
 
 		// Перемикаємо класс .mark по кліку
 		$(this).toggleClass("mark")
@@ -89,6 +97,15 @@ $( document ).ready(function() {
 		  	$(this).clone().appendTo($(".item-wishlist")).prepend('<img class="clip"src="assets/img/clip' + randomNumber + '.png"/>');
 		  	$('.item-wishlist > .item > .item-name').text('Remote control Tractor');
 
+
+		  	$('.item-wishlist .item:last').hover(function(){
+				console.log("hover");
+				$('.more-options').click(function() {
+					$(this).find('.dropdown-content').toggleClass('dropdown-content-show');
+					// $('.dropdown-content').toggleClass('dropdown-content-show');
+				});
+			});
+
 	  		//Виклик функції копіювання обкладинки для товару
 		  	copyBackgroundImage();
 
@@ -104,6 +121,13 @@ $( document ).ready(function() {
 			  		// та добавляємо клас .added, щоб помітити товар в якому ми добавили текст попереду і більше не добавляти
 			  		$(".item-wishlist > .item >", this).addClass('added');
 		  	}
+
+		// $('.item-wishlist .item').hover(function(){
+		// 	console.log("hover");
+		// 	$('.more-options').click(function() {
+		// 		$('.dropdown-content').toggleClass('dropdown-content-show');
+		// 	});
+		// });
 
 		// Якщо клас відсутній то убираємо цей товар із нашого списку
 		} else {
