@@ -583,6 +583,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/limit.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67494,
+		"inputAbbreviatedPath": "\/assets\/img\/limit.png",
+		"outputAbbreviatedPath": "\/assets\/img\/limit.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/lines.png": {
 		"fileType": 32768,
 		"ignore": 0,

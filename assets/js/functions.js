@@ -1,5 +1,15 @@
 $( document ).ready(function() {
 
+	function moreOptionsDropDown() {
+		$('.item-wishlist').change(function(event) {
+			console.log('test');
+		});
+	}
+
+	$('.item-wishlist > .item > .more-options').mouseover(function(event) {
+		console.log('hello');
+	});
+
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини
 	function listEmptyMessage() {
 
@@ -14,7 +24,6 @@ $( document ).ready(function() {
 			// Якщо блок порожній, то ми відображаємо повідомлення
 			$('.list-empty').show();
 		}
-
 	}
 
 	//Функція копіювання обкладинки для товару
