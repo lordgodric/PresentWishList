@@ -1,13 +1,9 @@
 $( document ).ready(function() {
-
-	function moreOptionsDropDown() {
-		$('.item-wishlist').change(function(event) {
-			console.log('test');
-		});
-	}
-
-	$('.item-wishlist > .item > .more-options').mouseover(function(event) {
-		console.log('hello');
+	
+	$('.item-wishlist > .item').mouseover(function() {
+		$('.red-bg').css('display', 'block');;
+	}, function() {
+		console.log('test2');
 	});
 
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини

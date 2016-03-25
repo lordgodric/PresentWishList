@@ -942,7 +942,7 @@ input[type="button"] {
   .wish-list .share hr {
     margin: 5px 2px; }
   .wish-list .share .share-button {
-    margin-top: 0px;
+    margin-top: 15px;
     height: 91px;
     background-image: url("../img/share-button-bg.png");
     background-position: -2px 1px;
