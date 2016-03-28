@@ -89,9 +89,11 @@ $( document ).ready(function() {
 				console.log("hover");
 				$('.more-options').click(function() {
 					$(this).find('.dropdown-content').toggleClass('dropdown-content-show');
+					$(this).toggleClass('more-options-open');
 				});
 				$('.more-options').mouseleave(function(event) {
 					$(this).find('.dropdown-content').removeClass('dropdown-content-show')
+					$(this).removeClass('more-options-open')
 				});				
 			});
 

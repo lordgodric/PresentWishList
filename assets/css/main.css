@@ -438,7 +438,7 @@ input[type="button"] {
 .chose-your-presents {
   display: inline-block;
   max-width: 500px;
-  margin: 40px 35px 23px 0;
+  margin: 20px 35px 180px 0;
   padding: 20px 35px;
   border-radius: 0.3em;
   box-shadow: 0px 0px 8px 0px #646464; }
@@ -525,7 +525,7 @@ input[type="button"] {
         .chose-your-presents .search form .search-icon {
           right: 15px; } }
   .chose-your-presents .gallery {
-    height: 660px;
+    height: 620px;
     overflow-x: scroll;
     overflow-x: hidden;
     padding-top: 3px; }
@@ -670,8 +670,8 @@ input[type="button"] {
 
 .wish-list {
   display: inline-block;
-  margin-top: 40px;
-  margin-bottom: 100px;
+  margin-top: 20px;
+  margin-bottom: 200px;
   max-width: 350px;
   min-width: 250px;
   height: 874px;
@@ -878,8 +878,14 @@ input[type="button"] {
         margin-right: 5px; }
       .wish-list .item-wishlist .item .view-item {
         display: none; }
+        .wish-list .item-wishlist .item .view-item:hover {
+          background-color: #FBFFA3;
+          color: #85144B; }
       .wish-list .item-wishlist .item .more-options {
         display: none; }
+        .wish-list .item-wishlist .item .more-options:hover {
+          background-color: #FBFFA3;
+          color: #85144B; }
       .wish-list .item-wishlist .item .dropdown-arrow {
         display: inline-block;
         vertical-align: middle;
@@ -902,6 +908,10 @@ input[type="button"] {
         border-bottom-right-radius: 0.3em;
         border: 1px solid #de5872;
         border-bottom: 1px solid #ebb5bf; }
+        .wish-list .item-wishlist .item .dropdown-content .remove:hover,
+        .wish-list .item-wishlist .item .dropdown-content .re-assign:hover {
+          background-color: #FBFFA3;
+          color: #85144B; }
       .wish-list .item-wishlist .item .dropdown-content-show {
         display: block;
         border: 1px solid #de5872;
@@ -912,6 +922,11 @@ input[type="button"] {
             top: 28px;
             margin: 0px;
             margin-left: -1px; } }
+      .wish-list .item-wishlist .item .more-options-open {
+        border: 1px solid #de5872;
+        border-bottom: 1px solid #ebb5bf;
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em; }
       .wish-list .item-wishlist .item .remove {
         padding-left: 5px;
         height: 30px;
@@ -924,16 +939,16 @@ input[type="button"] {
           display: inline-block;
           vertical-align: middle;
           margin-right: 5px; }
-      .wish-list .item-wishlist .item .re-assing {
+      .wish-list .item-wishlist .item .re-assign {
         height: 30px;
         padding-left: 7px;
         border-top: 1px solid #ebb5bf;
         border-bottom-left-radius: 0.3em;
         border-bottom-right-radius: 0.3em;
         padding-top: 10px; }
-        .wish-list .item-wishlist .item .re-assing span {
+        .wish-list .item-wishlist .item .re-assign span {
           vertical-align: middle; }
-        .wish-list .item-wishlist .item .re-assing .re-assign-red-icon {
+        .wish-list .item-wishlist .item .re-assign .re-assign-red-icon {
           display: inline-block;
           vertical-align: middle;
           margin-right: 7px; }

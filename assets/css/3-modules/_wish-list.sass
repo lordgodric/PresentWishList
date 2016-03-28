@@ -1,8 +1,8 @@
 .wish-list
 	// @extend .l-header
 	display: inline-block
-	margin-top: 40px
-	margin-bottom: 100px
+	margin-top: 20px
+	margin-bottom: 200px
 	max-width: 350px
 	min-width: 250px
 	height: 874px
@@ -94,14 +94,12 @@
 			line-height: 23px
 			color: #464545
 			padding: 10px 10px 25px 10px
-			// width: 180px
 			width: 50%
 
 		.read-more
 			text-decoration: underline
 			font: 12px "Ubuntu", serif
 			position: absolute
-			// position: relative
 			bottom: 20px
 			left: 35%
 
@@ -163,7 +161,6 @@
 					letter-spacing: 1px
 					padding-top: 3px
 					min-width: 110px
-					// max-width: 110px
 
 					@media only screen and (max-width: 425px)
 						display: inline-block
@@ -201,21 +198,6 @@
 						// margin: auto
 						height: 30px
 
-					// &:hover .dropdown-content
-					// 	display: block
-					// 	border: 1px solid #de5872
-					// 	border-top: none
-					// 	margin-left: -1px
-
-						
-
-
-					// &:hover
-						// border: 1px solid #de5872
-						// border-bottom: 1px solid #ebb5bf
-						// border-bottom-left-radius: 0em
-						// border-bottom-right-radius: 0em
-
 			.clip
 				position: absolute
 				left: -18px
@@ -247,7 +229,6 @@
 				font: 14px "Ubuntu", serif
 				font-weight: 500
 				display: block
-				// float: left
 
 			.by
 				display: block
@@ -267,11 +248,22 @@
 				vertical-align: middle
 				margin-right: 5px
 
+				
+
 			.view-item
 				display: none
 
+				&:hover
+					background-color: $dropdownHover
+					color: $maroon
+
+
 			.more-options
 				display: none
+
+				&:hover
+					background-color: $dropdownHover
+					color: $maroon
 
 			.dropdown-arrow
 				display: inline-block
@@ -298,6 +290,13 @@
 				border-bottom-right-radius: 0.3em
 				border: 1px solid #de5872
 				border-bottom: 1px solid #ebb5bf
+
+				.remove,
+				.re-assign
+
+					&:hover
+						background-color: $dropdownHover
+						color: $maroon
 				
 
 			.dropdown-content-show
@@ -310,6 +309,12 @@
 					top: 28px
 					margin: 0px
 					margin-left: -1px
+
+			.more-options-open
+				border: 1px solid #de5872
+				border-bottom: 1px solid #ebb5bf
+				border-bottom-left-radius: 0em
+				border-bottom-right-radius: 0em
 
 			.remove
 				padding-left: 5px
@@ -328,7 +333,7 @@
 					vertical-align: middle
 					margin-right: 5px
 
-			.re-assing
+			.re-assign
 				height: 30px
 				padding-left: 7px
 				border-top: 1px solid #ebb5bf
