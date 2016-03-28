@@ -908,10 +908,13 @@ input[type="button"] {
         border-bottom-right-radius: 0.3em;
         border: 1px solid #de5872;
         border-bottom: 1px solid #ebb5bf; }
-        .wish-list .item-wishlist .item .dropdown-content .remove:hover,
-        .wish-list .item-wishlist .item .dropdown-content .re-assign:hover {
-          background-color: #FBFFA3;
-          color: #85144B; }
+        .wish-list .item-wishlist .item .dropdown-content .remove,
+        .wish-list .item-wishlist .item .dropdown-content .re-assign {
+          color: #d93655; }
+          .wish-list .item-wishlist .item .dropdown-content .remove:hover,
+          .wish-list .item-wishlist .item .dropdown-content .re-assign:hover {
+            background-color: #FBFFA3;
+            color: #85144B; }
       .wish-list .item-wishlist .item .dropdown-content-show {
         display: block;
         border: 1px solid #de5872;
@@ -1059,7 +1062,8 @@ body {
     height: 330px; }
 
 .l-main {
-  background-image: url("../../assets/img/main-bg.png"); }
+  background-image: url("../../assets/img/main-bg.png");
+  background-size: cover; }
   .l-main .l-main-content {
     max-width: 960px;
     margin: 0 auto;
