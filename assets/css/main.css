@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -431,7 +432,8 @@ input[type="button"] {
   font-size: 16px;
   font-family: "Signika", Courier, monospace;
   color: #a2a2a2;
-  font-weight: 300; }
+  font-weight: 300;
+  padding-bottom: 5px; }
 
 .chose-your-presents {
   display: inline-block;
@@ -464,7 +466,7 @@ input[type="button"] {
     .chose-your-presents .steps button {
       background-color: #d93655;
       letter-spacing: 1px;
-      padding: 0 5px;
+      padding: 0px 5px;
       position: absolute;
       left: 0;
       min-width: 80px; }
@@ -473,14 +475,15 @@ input[type="button"] {
         letter-spacing: 0.1px; }
         .chose-your-presents .steps button a:hover {
           color: #FFDC00; }
-        .chose-your-presents .steps button a img {
-          display: inline-block;
-          float: left;
+        .chose-your-presents .steps button a i {
+          display: inline;
           margin: 6px 0px 0px 5px; }
         .chose-your-presents .steps button a .back {
-          display: block;
-          float: left;
+          display: inline;
           margin-left: 5px; }
+          .chose-your-presents .steps button a .back:before {
+            content: "";
+            font-family: FontAwesome; }
     .chose-your-presents .steps p {
       display: inline-block;
       text-align: center;
@@ -668,7 +671,7 @@ input[type="button"] {
 .wish-list {
   display: inline-block;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   max-width: 350px;
   min-width: 250px;
   height: 874px;
@@ -806,7 +809,8 @@ input[type="button"] {
           .wish-list .item-wishlist .item:hover .view-item {
             display: inline-block;
             top: 10px;
-            left: -60px;
+            width: 120px;
+            left: -64px;
             margin-left: 50%;
             right: 0;
             text-align: center;
@@ -828,6 +832,7 @@ input[type="button"] {
           .wish-list .item-wishlist .item:hover .more-options {
             display: inline-block;
             top: 45px;
+            width: 120px;
             left: -74px;
             margin-left: 50%;
             right: 0;
@@ -894,12 +899,19 @@ input[type="button"] {
         text-align: left;
         z-index: 30;
         border-bottom-left-radius: 0.3em;
-        border-bottom-right-radius: 0.3em; }
+        border-bottom-right-radius: 0.3em;
+        border: 1px solid #de5872;
+        border-bottom: 1px solid #ebb5bf; }
       .wish-list .item-wishlist .item .dropdown-content-show {
         display: block;
         border: 1px solid #de5872;
         border-top: none;
         margin-left: -1px; }
+        @media only screen and (max-width: 425px) {
+          .wish-list .item-wishlist .item .dropdown-content-show {
+            top: 28px;
+            margin: 0px;
+            margin-left: -1px; } }
       .wish-list .item-wishlist .item .remove {
         padding-left: 5px;
         height: 30px;
@@ -940,9 +952,9 @@ input[type="button"] {
     .wish-list .item-wishlist .list-full {
       position: static; }
   .wish-list .share hr {
-    margin: 5px 2px; }
+    margin: 5px 2px;
+    padding: 0; }
   .wish-list .share .share-button {
-    margin-top: 15px;
     height: 91px;
     background-image: url("../img/share-button-bg.png");
     background-position: -2px 1px;
@@ -950,21 +962,25 @@ input[type="button"] {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     font: bold 28px "Ubuntu", sans-serif;
-    line-height: 90px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    position: relative; }
     .wish-list .share .share-button a {
       border: 1px solid #333;
       border-radius: 0.2em;
+      width: 100%;
       padding: 10px 75px;
       box-shadow: 0px 1px 0px 0px #787878, 0px 1px 0px 0px #969696 inset, -0.8px 0px 1px 0px #4b4b4b inset;
-      color: #fff; }
+      color: #fff;
+      position: relative;
+      top: 33%; }
       .wish-list .share .share-button a:hover {
         color: #01FF70;
         border: 1px solid #000; }
       @media only screen and (max-width: 767px) {
         .wish-list .share .share-button a {
           font-size: 16px;
-          text-align: center; } }
+          text-align: center;
+          top: 27%; } }
 
 body {
   margin: 10px;
@@ -1036,18 +1052,11 @@ body {
     text-align: center; }
 
 .l-footer, .l-footer .l-footer-content {
-  height: 338px;
   background-color: #f6f6f6;
   background-image: url("../img/pattern.png"); }
   .l-footer .l-footer-content {
     max-width: 960px;
     margin: 0 auto; }
-  @media only screen and (max-width: 680px) {
-    .l-footer, .l-footer .l-footer-content {
-      height: 380px; } }
-  @media only screen and (max-width: 388px) {
-    .l-footer, .l-footer .l-footer-content {
-      height: 450px; } }
 
 body {
   margin: 0; }

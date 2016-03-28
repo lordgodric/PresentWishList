@@ -1,18 +1,5 @@
 $( document ).ready(function() {
 
-
-	// Випадаючий список для кнопки more-options
-	// $('.red-bg').on(function() {
-	// 	$('.more-options').click(function() {
-	// 		$('.dropdown-content').toggleClass('dropdown-content-show');
-	// 	});
-	// }, function() {});
-
-	// $(".red-bg").on("hover", function () {
-    
-	// 	console.log('test');
-	// });
-
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини
 	function listEmptyMessage() {
 
@@ -67,7 +54,7 @@ $( document ).ready(function() {
 
 	// Адаптивне меню для мобільного вигляду
 	$('.hamburger').click(function(event) {
-		console.log('test');
+		// console.log('test');
 		$('.l-header-content').toggleClass('l-header-mini');
 		if (!$('.l-header-content').hasClass('l-header-mini')) {
 			$('.header-nav').hide();
@@ -102,8 +89,10 @@ $( document ).ready(function() {
 				console.log("hover");
 				$('.more-options').click(function() {
 					$(this).find('.dropdown-content').toggleClass('dropdown-content-show');
-					// $('.dropdown-content').toggleClass('dropdown-content-show');
 				});
+				$('.more-options').mouseleave(function(event) {
+					$(this).find('.dropdown-content').removeClass('dropdown-content-show')
+				});				
 			});
 
 	  		//Виклик функції копіювання обкладинки для товару
@@ -122,12 +111,6 @@ $( document ).ready(function() {
 			  		$(".item-wishlist > .item >", this).addClass('added');
 		  	}
 
-		// $('.item-wishlist .item').hover(function(){
-		// 	console.log("hover");
-		// 	$('.more-options').click(function() {
-		// 		$('.dropdown-content').toggleClass('dropdown-content-show');
-		// 	});
-		// });
 
 		// Якщо клас відсутній то убираємо цей товар із нашого списку
 		} else {

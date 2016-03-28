@@ -41,9 +41,9 @@ html(lang="en")
           .steps
             button
               a(href="#") 
-                img(src="assets/img/back-arrow.png", alt="back arrow")
+                //- <i class="fa fa-caret-left"></i>
                 .back 
-                  span back
+                  | back
             p Step 2 of 2
             hr
           .search
@@ -381,32 +381,7 @@ html(lang="en")
                 img(src="assets/img/checked.png", alt="")
                 p This item has already been added to your list
 
-            .item.item13
-              .cover
-              .red-bg
-              .item-name Siku - 1:87 Scale - Low Loader With John ... 
-              .item-price 
-                | &#163 19.55
-              .category Tractors
-              a(href="#").by By:
-                img(src="assets/img/john-lewis.png", alt="amazon")
-              button.add-to-list Add to list
-              button.view-item 
-                img(src="assets/img/search-red-icon.png", alt="find red icon").search-red-icon
-                span View item
-              button.more-options 
-                span More Options
-                img(src="assets/img/dropdown-arrow.png", alt="dropdown arrow").dropdown-arrow
-                .dropdown-content
-                  .remove
-                    img(src="assets/img/close-red-icon.png", alt="remove item icon").close-red-icon
-                    span Remove item
-                  .re-assing
-                    img(src="assets/img/re-assign.png", alt="remove item icon").re-assign-red-icon
-                    span Re-assign item
-              .already
-                img(src="assets/img/checked.png", alt="")
-                p This item has already been added to your list
+            
                 
           .note
               p Please note, not all prices displayed will be accurate. 
@@ -439,10 +414,11 @@ html(lang="en")
               .logo-transparent
                 img(src="assets/img/logo-transparent.png", alt="logo transparent in basket")
           .share
-            hr
-            hr
+            //- hr
+            //- hr
             .share-button 
-              a(href="#") Save & Share
+              a(href="#") 
+                | Save & Share
 
     .l-footer
       .l-footer-content

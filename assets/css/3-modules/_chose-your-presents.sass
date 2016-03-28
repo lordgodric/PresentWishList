@@ -1,3 +1,4 @@
+
 .chose-your-presents
 	@extend .l-header
 	display: inline-block
@@ -6,6 +7,8 @@
 	padding: 20px 35px
 	border-radius: 0.3em
 	box-shadow: 0px 0px 8px 0px rgb(100,100,100)
+
+	
 
 	@media only screen and (max-width: $screen-xs-max)
 		min-width: 250px
@@ -34,38 +37,34 @@
 		button
 			background-color: $cherry
 			letter-spacing: 1px
-			padding: 0 5px
-			// height: 25px
+			padding: 0px 5px
 			position: absolute
 			left: 0
 			min-width: 80px
+			// display: inline
 
 			a
 				color: $white
 				letter-spacing: 0.1px
-
+				
 				&:hover
 					color: $yellow
 
-				img
-					display: inline-block
-					float: left
+				i
+					display: inline
 					margin: 6px 0px 0px 5px
 
 				.back
-					display: block
-					float: left
+					display: inline
 					margin-left: 5px
-					// right: 5px
-					// position: relative
-					// top: -33px
-					// margin: 0 70px
-					// font-size: 20px
-					// color: $text
+
+					&:before
+						content: "\f0d9"
+						font-family: FontAwesome
+				
 		p
 			display: inline-block
 			text-align: center
-			// width: 100px
 			margin: 0 70px
 			font-size: 20px
 			color: $text
@@ -121,7 +120,6 @@
 
 		.item
 			width: 130px
-			// height: 200px
 			display: inline-block
 			margin-bottom: 20px
 			margin-right: 5px
@@ -132,13 +130,9 @@
 			cursor: pointer
 
 			&:hover
-				// height: 330px
 				background-color: #fff
 				vertical-align: top
 				box-shadow: 0px 0px 5px 0px rgb(100,100,100)
-
-				.cover
-					// position: relative
 
 				.by
 					display: none
