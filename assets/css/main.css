@@ -326,7 +326,8 @@ input[type="button"] {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px; }
     .sign button span {
-      font-size: 11px; }
+      font-size: 12px;
+      letter-spacing: 0.1px; }
   .sign .register {
     width: 105px;
     padding: 0px 10px;
@@ -351,8 +352,8 @@ input[type="button"] {
     margin-left: -10px; }
   .sign a {
     color: #f6f6f6;
-    letter-spacing: 1px;
-    font-size: 12px; }
+    letter-spacing: 0.3px;
+    line-height: 1.25; }
     .sign a:hover {
       color: #01FF70; }
 
@@ -369,7 +370,7 @@ input[type="button"] {
       width: 100%;
       display: none; } }
   .header-nav a {
-    margin-left: 70px;
+    margin: 0 10px 0 40px;
     font-size: 18px;
     font-weight: 400; }
     @media only screen and (max-width: 767px) {
@@ -415,7 +416,7 @@ input[type="button"] {
     background-position: 46px; }
 
 .headerLogo img {
-  margin: 20px 0; }
+  margin: 23px 0; }
   @media only screen and (max-width: 767px) {
     .headerLogo img {
       margin: 0 auto;
@@ -455,34 +456,35 @@ input[type="button"] {
       max-width: 500px; } }
   .chose-your-presents .chose-header {
     font-size: 50px;
-    color: #d93655;
-    font-family: "Signika", Courier, monospace;
-    font-weight: 300;
-    text-align: center; }
+    color: #d93655; }
     .chose-your-presents .chose-header p {
-      margin: 0; }
+      margin: 0;
+      font-family: "Signika", Courier;
+      text-align: center; }
   .chose-your-presents .steps {
     position: relative; }
     .chose-your-presents .steps button {
       background-color: #d93655;
-      letter-spacing: 1px;
-      padding: 0px 5px;
       position: absolute;
       left: 0;
-      min-width: 80px; }
+      min-width: 70px;
+      height: 25px; }
       .chose-your-presents .steps button:hover {
         background-color: #EA5959; }
-      .chose-your-presents .steps button:hover a {
-        color: #85144B; }
+        .chose-your-presents .steps button:hover a {
+          color: #85144B; }
       .chose-your-presents .steps button a {
         color: #f6f6f6;
-        letter-spacing: 0.1px; }
+        letter-spacing: 0.2px;
+        font: 16px "Signika", sans-serif;
+        font-weight: 600; }
         .chose-your-presents .steps button a i {
           display: inline;
           margin: 6px 0px 0px 5px; }
         .chose-your-presents .steps button a .back {
-          display: inline;
-          margin-left: 5px; }
+          display: inline-block;
+          position: relative;
+          top: -3px; }
           .chose-your-presents .steps button a .back:before {
             content: "";
             font-family: FontAwesome; }
@@ -829,7 +831,8 @@ input[type="button"] {
         font: 12px "Ubuntu", serif;
         text-transform: none;
         font-weight: 500;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        font-family: "Ubuntu", sans-serif; }
         @media only screen and (max-width: 425px) {
           .wish-list .item-wishlist .item:hover .more-options {
             display: inline-block;
@@ -864,8 +867,7 @@ input[type="button"] {
           color: #FF851B; }
       .wish-list .item-wishlist .item .item-price {
         color: #d93655;
-        font: 14px "Ubuntu", serif;
-        font-weight: 500;
+        font: 14px "Ubuntu", serif medium;
         display: block; }
       .wish-list .item-wishlist .item .by {
         display: block; }
@@ -879,12 +881,15 @@ input[type="button"] {
         vertical-align: middle;
         margin-right: 5px; }
       .wish-list .item-wishlist .item .view-item {
-        display: none; }
+        display: none;
+        font: 16px "Ubuntu", sans-serif;
+        line-height: 2.175; }
         .wish-list .item-wishlist .item .view-item:hover {
           background-color: #FBFFA3;
           color: #85144B; }
       .wish-list .item-wishlist .item .more-options {
-        display: none; }
+        display: none;
+        font-family: "Ubuntu", sans-serif; }
         .wish-list .item-wishlist .item .more-options:hover {
           background-color: #FBFFA3;
           color: #85144B; }
@@ -912,7 +917,9 @@ input[type="button"] {
         border-bottom: 1px solid #ebb5bf; }
         .wish-list .item-wishlist .item .dropdown-content .remove,
         .wish-list .item-wishlist .item .dropdown-content .re-assign {
-          color: #d93655; }
+          color: #d93655;
+          font: 18px "Ubuntu", sans-serif medium;
+          letter-spacing: 0.2px; }
           .wish-list .item-wishlist .item .dropdown-content .remove:hover,
           .wish-list .item-wishlist .item .dropdown-content .re-assign:hover {
             background-color: #FBFFA3;

@@ -186,6 +186,7 @@
 					text-transform: none
 					font-weight: 500
 					letter-spacing: 1px
+					font-family: 'Ubuntu', sans-serif
 
 					@media only screen and (max-width: 425px)
 						display: inline-block
@@ -226,8 +227,7 @@
 
 			.item-price
 				color: $cherry
-				font: 14px "Ubuntu", serif
-				font-weight: 500
+				font: 14px "Ubuntu", serif medium
 				display: block
 
 			.by
@@ -252,15 +252,18 @@
 
 			.view-item
 				display: none
-
+				font: 16px 'Ubuntu', sans-serif
+				line-height: 2.175
 
 				&:hover
 					background-color: $dropdownHover
 					color: $maroon
 
 
+
 			.more-options
 				display: none
+				font-family: 'Ubuntu', sans-serif
 
 				&:hover
 					background-color: $dropdownHover
@@ -278,6 +281,7 @@
 					display: none
 
 			.dropdown-content
+
 				display: none
 				position: absolute
 				min-height: 80px
@@ -295,6 +299,8 @@
 				.remove,
 				.re-assign
 					color: $cherry
+					font: 18px 'Ubuntu', sans-serif medium
+					letter-spacing: 0.2px
 
 					&:hover
 						background-color: $dropdownHover
