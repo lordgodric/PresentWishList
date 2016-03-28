@@ -470,11 +470,13 @@ input[type="button"] {
       position: absolute;
       left: 0;
       min-width: 80px; }
+      .chose-your-presents .steps button:hover {
+        background-color: #EA5959; }
+      .chose-your-presents .steps button:hover a {
+        color: #85144B; }
       .chose-your-presents .steps button a {
         color: #f6f6f6;
         letter-spacing: 0.1px; }
-        .chose-your-presents .steps button a:hover {
-          color: #FFDC00; }
         .chose-your-presents .steps button a i {
           display: inline;
           margin: 6px 0px 0px 5px; }
