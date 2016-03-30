@@ -26,6 +26,7 @@
 		font-weight: 300
 		text-align: center
 		margin-top: -3px
+		margin-bottom: 3px
 		
 		p
 			margin: 0
@@ -88,12 +89,13 @@
 			line-height: 1.25
 			letter-spacing: 0px
 			margin-bottom: 22px
+			text-align: left
+			width: 101%
 
 		form
 			position: relative
 
 			input[type="search"]
-				// margin-top: -3px
 				margin-left: -3px
 				height: 44px
 				width: 98.5%
@@ -108,13 +110,12 @@
 
 			input[placeholder]
 				padding-left: 10px
-				color: #000
+				color: #848484
 
 
 			.search-icon
 				height: 25px
 				width: 25px
-				// float: right
 				position: absolute
 				right: 11px
 				top: 11px
@@ -130,15 +131,18 @@
 		height: 620px
 		overflow-x: scroll
 		overflow-x: hidden
-		// padding-top: -10px
-		// margin-right: -27px
-		margin: 0 -27px 0 -7px
+		margin: 0 -28px 0 -18px
+
+		@media only screen and (max-width: 767px)
+			margin: 0 0 0 -7px			
+
 
 		.item
 			width: 150px
 			display: inline-block
-			margin-bottom: 20px
-			margin-right: 5px
+			// margin-bottom: 20px
+			// margin-right: 5px
+			margin: 5px
 			text-align: left
 			line-height: 16px
 			padding: 7px
@@ -176,15 +180,13 @@
 				.more-options
 					display: none
 
-
-
 			.cover
 				height: 135px
 				width: 135px
 				margin: 0 auto
 				border: 7px solid white
-				box-shadow: 0px 1px 3px 0px rgb(100,100,100)
-				margin-top: 10px
+				box-shadow: 0 3px 2px -1px #ccc
+				margin-top: 5px
 
 			.item-name
 				font-size: 14px
@@ -192,11 +194,15 @@
 				display: block
 				font-family: 'Signika'
 				font-weight: 300
+				line-height: 1.25
 				color: #1b75ba
 
 			.item-price
 				color: $cherry
+				font-family: 'Signika'
+				font-weight: 300
 				line-height: 16px
+				letter-spacing: 0px
 
 			.by
 				display: none
@@ -231,8 +237,8 @@
 				margin-right: -20px
 
 			.already
-				width: 140px
-				height: 228px
+				width: 154px
+				height: 215px
 				background: #fff
 				position: absolute
 				display: none
@@ -242,6 +248,7 @@
 				padding: 5px
 				filter: alpha(opacity=90)
 				opacity: 0.90
+				border-radius: 0.2em
 
 				p
 					text-align: center
@@ -257,7 +264,7 @@
 		.item1
 			.cover
 				background-image: url("../img/item-cover-1.png")
-				background-position: -20px -20px
+				background-position: -5px -9px
 
 		.item2
 			.cover
