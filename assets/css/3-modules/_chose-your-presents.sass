@@ -2,8 +2,8 @@
 .chose-your-presents
 	@extend .l-header
 	display: inline-block
-	max-width: 500px
-	margin: 20px 35px 180px 0
+	max-width: 503px
+	margin: 20px 30px 180px 0
 	padding: 20px 35px
 	border-radius: 0.3em
 	box-shadow: 0px 0px 8px 0px rgb(100,100,100)
@@ -22,20 +22,26 @@
 	.chose-header
 		font-size: 50px
 		color: $cherry
+		font-family: 'Signika', Courier 
+		font-weight: 300
+		text-align: center
+		margin-top: -3px
 		
 		p
 			margin: 0
-			font-family: 'Signika', Courier 
-			// font-weight: 300
-			text-align: center
+			
 
 	.steps
 		position: relative
+		margin-top: 2px
+		font-family: 'Signika', Courier, sans-serif
+		font-weight: 300
 
 		button
 			background-color: $cherry
 			position: absolute
 			left: 0
+			top: 2px
 			min-width: 70px
 			height: 25px
 
@@ -58,7 +64,7 @@
 				.back
 					display: inline-block
 					position: relative
-					top: -3px
+					top: -2px
 
 					&:before
 						content: "\f0d9"
@@ -72,22 +78,25 @@
 			color: $text
 
 		hr
-			margin: 10px 0 20px 0
+			margin: 10px 0 13px 0
 
 	.search
 		p
 			font-size: 16px
 			color: #8f8f8f
 			font-family: 'Ubuntu', sans-serif
-			line-height: 18px
-			letter-spacing: 0.3px
+			line-height: 1.25
+			letter-spacing: 0px
+			margin-bottom: 22px
 
 		form
 			position: relative
 
 			input[type="search"]
-				height: 50px
-				width: 98%
+				// margin-top: -3px
+				margin-left: -3px
+				height: 44px
+				width: 98.5%
 				background-image: url("../img/pattern-search.png")
 				font-size: 20px
 				border-radius: 0.3em
@@ -107,27 +116,33 @@
 				width: 25px
 				// float: right
 				position: absolute
-				right: 10px
-				top: 15px
+				right: 11px
+				top: 11px
 				background-image: url("../img/search-icon.png")
 
 				@media only screen and (max-width: $screen-xs-max)
 					right: 15px
 
+		hr
+			margin: 28px 0 0px 0
+
 	.gallery
 		height: 620px
 		overflow-x: scroll
 		overflow-x: hidden
-		padding-top: 3px
+		// padding-top: -10px
+		// margin-right: -27px
+		margin: 0 -27px 0 -7px
 
 		.item
-			width: 130px
+			width: 150px
 			display: inline-block
 			margin-bottom: 20px
 			margin-right: 5px
 			text-align: left
 			line-height: 16px
-			padding: 10px
+			padding: 7px
+			padding-top: 4px
 			position: relative
 			cursor: pointer
 
@@ -164,8 +179,8 @@
 
 
 			.cover
-				height: 120px
-				width: 110px
+				height: 135px
+				width: 135px
 				margin: 0 auto
 				border: 7px solid white
 				box-shadow: 0px 1px 3px 0px rgb(100,100,100)

@@ -22,13 +22,13 @@
 		position: relative
 
 		.list-header-text
-			font-size: 20px
 			display: block
 			text-align: center
 			color: $white
-			font-family: 'Ubuntu', sans-serif
-			font-weight: bold
-			padding-top: 11px
+			font: 18px 'Ubuntu', sans-serif
+			font-weight: 700
+			letter-spacing: 0px
+			padding-top: 17px
 
 			@media only screen and (max-width: $screen-xs-max)
 				font-size: 16px
@@ -42,10 +42,10 @@
 
 		.link-icon
 			position: absolute
-			left: 15px
-			top: 8px
-			height: 21px
-			width: 21px
+			left: 5px
+			top: 5px
+			height: 18px
+			width: 18px
 			padding: 10px
 			border: 1px solid #333
 			border-radius: 0.3em
@@ -55,8 +55,9 @@
 				border: 1px solid #000
 
 			img
-				height: 21px
-				margin-left: 2px
+				height: 25px
+				// margin-left: 2px
+				margin-top: -3px
 
 		.pencil-icon
 			position: absolute
@@ -133,6 +134,7 @@
 			position: relative
 			max-height: 80px
 			width: 100%
+
 
 			&:hover
 				.cover
@@ -252,8 +254,8 @@
 
 			.view-item
 				display: none
-				font: 16px 'Ubuntu', sans-serif
-				line-height: 2.175
+				font: 20px 'Ubuntu', sans-serif
+				font-weight: 700
 
 				&:hover
 					background-color: $dropdownHover

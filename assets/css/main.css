@@ -404,6 +404,7 @@ input[type="button"] {
 
 .social {
   width: 140px;
+  padding-left: 9px;
   margin: 0 auto;
   padding-bottom: 10px; }
   .social .facebook, .social .twiiter {
@@ -426,7 +427,7 @@ input[type="button"] {
 .footerLogo img {
   margin: 0 auto;
   display: block;
-  padding: 50px 0 11px 0; }
+  padding: 50px 0 5px 0; }
 
 .copyright {
   text-align: center;
@@ -438,8 +439,8 @@ input[type="button"] {
 
 .chose-your-presents {
   display: inline-block;
-  max-width: 500px;
-  margin: 20px 35px 180px 0;
+  max-width: 503px;
+  margin: 20px 30px 180px 0;
   padding: 20px 35px;
   border-radius: 0.3em;
   box-shadow: 0px 0px 8px 0px #646464; }
@@ -456,17 +457,23 @@ input[type="button"] {
       max-width: 500px; } }
   .chose-your-presents .chose-header {
     font-size: 50px;
-    color: #d93655; }
+    color: #d93655;
+    font-family: "Signika", Courier;
+    font-weight: 300;
+    text-align: center;
+    margin-top: -3px; }
     .chose-your-presents .chose-header p {
-      margin: 0;
-      font-family: "Signika", Courier;
-      text-align: center; }
+      margin: 0; }
   .chose-your-presents .steps {
-    position: relative; }
+    position: relative;
+    margin-top: 2px;
+    font-family: "Signika", Courier, sans-serif;
+    font-weight: 300; }
     .chose-your-presents .steps button {
       background-color: #d93655;
       position: absolute;
       left: 0;
+      top: 2px;
       min-width: 70px;
       height: 25px; }
       .chose-your-presents .steps button:hover {
@@ -484,7 +491,7 @@ input[type="button"] {
         .chose-your-presents .steps button a .back {
           display: inline-block;
           position: relative;
-          top: -3px; }
+          top: -2px; }
           .chose-your-presents .steps button a .back:before {
             content: "";
             font-family: FontAwesome; }
@@ -495,18 +502,20 @@ input[type="button"] {
       font-size: 20px;
       color: #9f9e9e; }
     .chose-your-presents .steps hr {
-      margin: 10px 0 20px 0; }
+      margin: 10px 0 13px 0; }
   .chose-your-presents .search p {
     font-size: 16px;
     color: #8f8f8f;
     font-family: "Ubuntu", sans-serif;
-    line-height: 18px;
-    letter-spacing: 0.3px; }
+    line-height: 1.25;
+    letter-spacing: 0px;
+    margin-bottom: 22px; }
   .chose-your-presents .search form {
     position: relative; }
     .chose-your-presents .search form input[type="search"] {
-      height: 50px;
-      width: 98%;
+      margin-left: -3px;
+      height: 44px;
+      width: 98.5%;
       background-image: url("../img/pattern-search.png");
       font-size: 20px;
       border-radius: 0.3em;
@@ -522,25 +531,28 @@ input[type="button"] {
       height: 25px;
       width: 25px;
       position: absolute;
-      right: 10px;
-      top: 15px;
+      right: 11px;
+      top: 11px;
       background-image: url("../img/search-icon.png"); }
       @media only screen and (max-width: 767px) {
         .chose-your-presents .search form .search-icon {
           right: 15px; } }
+  .chose-your-presents .search hr {
+    margin: 28px 0 0px 0; }
   .chose-your-presents .gallery {
     height: 620px;
     overflow-x: scroll;
     overflow-x: hidden;
-    padding-top: 3px; }
+    margin: 0 -27px 0 -7px; }
     .chose-your-presents .gallery .item {
-      width: 130px;
+      width: 150px;
       display: inline-block;
       margin-bottom: 20px;
       margin-right: 5px;
       text-align: left;
       line-height: 16px;
-      padding: 10px;
+      padding: 7px;
+      padding-top: 4px;
       position: relative;
       cursor: pointer; }
       .chose-your-presents .gallery .item:hover {
@@ -565,8 +577,8 @@ input[type="button"] {
         .chose-your-presents .gallery .item:hover .more-options {
           display: none; }
       .chose-your-presents .gallery .item .cover {
-        height: 120px;
-        width: 110px;
+        height: 135px;
+        width: 135px;
         margin: 0 auto;
         border: 7px solid white;
         box-shadow: 0px 1px 3px 0px #646464;
@@ -693,13 +705,13 @@ input[type="button"] {
     border-radius: 0.3em;
     position: relative; }
     .wish-list .wishlist-header .list-header-text {
-      font-size: 20px;
       display: block;
       text-align: center;
       color: #f6f6f6;
-      font-family: "Ubuntu", sans-serif;
-      font-weight: bold;
-      padding-top: 11px; }
+      font: 18px "Ubuntu", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0px;
+      padding-top: 17px; }
       @media only screen and (max-width: 767px) {
         .wish-list .wishlist-header .list-header-text {
           font-size: 16px;
@@ -709,10 +721,10 @@ input[type="button"] {
           font-size: 14px; } }
     .wish-list .wishlist-header .link-icon {
       position: absolute;
-      left: 15px;
-      top: 8px;
-      height: 21px;
-      width: 21px;
+      left: 5px;
+      top: 5px;
+      height: 18px;
+      width: 18px;
       padding: 10px;
       border: 1px solid #333;
       border-radius: 0.3em;
@@ -720,8 +732,8 @@ input[type="button"] {
       .wish-list .wishlist-header .link-icon:hover {
         border: 1px solid #000; }
       .wish-list .wishlist-header .link-icon img {
-        height: 21px;
-        margin-left: 2px; }
+        height: 25px;
+        margin-top: -3px; }
     .wish-list .wishlist-header .pencil-icon {
       position: absolute;
       right: 15px;
@@ -882,8 +894,8 @@ input[type="button"] {
         margin-right: 5px; }
       .wish-list .item-wishlist .item .view-item {
         display: none;
-        font: 16px "Ubuntu", sans-serif;
-        line-height: 2.175; }
+        font: 20px "Ubuntu", sans-serif;
+        font-weight: 700; }
         .wish-list .item-wishlist .item .view-item:hover {
           background-color: #FBFFA3;
           color: #85144B; }
@@ -1076,7 +1088,7 @@ body {
   .l-main .l-main-content {
     max-width: 960px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 22px 20px 20px 20px;
     text-align: center; }
 
 .l-footer, .l-footer .l-footer-content {
