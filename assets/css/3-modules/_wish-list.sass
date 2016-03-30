@@ -106,10 +106,10 @@
 			font: 12px 'Ubuntu', serif
 			position: absolute
 			bottom: 20px
-			left: 35%
-
+			left: 33%
+			margin-left: 12px
+			margin-bottom: -3px			
 			color: #a3acb3
-			margin-left: 10px
 
 			&:hover
 				color: #000
@@ -123,6 +123,7 @@
 			margin: 4px 2px
 			// color: #f5c9d1
 
+
 	.item-wishlist
 		overflow-x: scroll
 		overflow-x: hidden
@@ -130,10 +131,12 @@
 		padding: 0 25px
 		margin-left: -15px
 		padding-left: 28px
+		margin-top: 15px
+
 
 		.item
 			display: inline-block
-			margin: 15px 0
+			margin: 14px 0
 			text-align: left
 			border-radius: 0.4em
 			position: relative
@@ -162,12 +165,12 @@
 					top: 20px
 					background: #f7f7f7
 					color: $hoverItem
-					font: 12px "Ubuntu", serif
+					font: 16px "Ubuntu", serif
 					font-weight: 500
 					text-transform: none
-					letter-spacing: 1px
+					letter-spacing: 0px
 					padding-top: 3px
-					min-width: 110px
+					// min-width: 110px
 
 					@media only screen and (max-width: 425px)
 						display: inline-block
@@ -184,15 +187,15 @@
 					display: block
 					position: absolute
 					height: 40px
-					right: 10px
-					min-width: 138px
+					right: -6px
+					min-width: 144px
 					top: 20px
 					background: #f7f7f7
 					color: $hoverItem
-					font: 12px "Ubuntu", serif
+					font: 16px "Ubuntu", serif
 					text-transform: none
 					font-weight: 500
-					letter-spacing: 1px
+					letter-spacing: 0px
 					font-family: 'Ubuntu', sans-serif
 
 					@media only screen and (max-width: 425px)
@@ -209,7 +212,7 @@
 			.clip
 				position: absolute
 				left: -18px
-				top: 10px
+				top: 23px
 				z-index: 330
 
 			.cover
@@ -220,25 +223,33 @@
 				float: left
 				display: inline-block
 				margin-right: 10px
+				margin-left: 4px
 				position: relative
 				background-position: center
 
 			.item-name
-				font: 1.2em 'Pacifico', cursive
+				font: 20px 'Pacifico', cursive
 				color: #1b75ba
-				line-height: 20px
+				line-height: 1.74
 				display: block
+				margin-top: -2px
 
 				&:hover
 					color: $orange
 
 			.item-price
 				color: $cherry
-				font: 14px "Ubuntu", serif medium
+				font: 16px 'Ubuntu', serif
+				font-weight: 500
 				display: block
+				margin-top: 2px
 
 			.by
 				display: block
+				color: #000
+				font: 16px 'Ubuntu', serif
+				font-weight: 500
+				margin-top: 5px
 
 				img
 					vertical-align: middle
@@ -262,9 +273,9 @@
 				font: 20px 'Ubuntu', sans-serif
 				font-weight: 700
 
-				&:hover
-					background-color: $dropdownHover
-					color: $maroon
+				// &:hover
+				// 	background-color: $dropdownHover
+				// 	color: $maroon
 
 
 
@@ -272,9 +283,9 @@
 				display: none
 				font-family: 'Ubuntu', sans-serif
 
-				&:hover
-					background-color: $dropdownHover
-					color: $maroon
+				// &:hover
+				// 	background-color: $dropdownHover
+				// 	color: $maroon
 
 			.dropdown-arrow
 				display: inline-block
@@ -306,12 +317,13 @@
 				.remove,
 				.re-assign
 					color: $cherry
-					font: 18px 'Ubuntu', sans-serif medium
-					letter-spacing: 0.2px
+					font: 15px 'Ubuntu', sans-serif
+					font-weight: 500
+					letter-spacing: 0px
 
-					&:hover
-						background-color: $dropdownHover
-						color: $maroon
+					// &:hover
+					// 	background-color: $dropdownHover
+					// 	color: $maroon
 				
 
 			.dropdown-content-show

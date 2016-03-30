@@ -544,7 +544,7 @@ input[type="button"] {
   .chose-your-presents .search hr {
     margin: 28px 0 0px 0; }
   .chose-your-presents .gallery {
-    height: 620px;
+    height: 654px;
     overflow-x: scroll;
     overflow-x: hidden;
     margin: 0 -28px 0 -18px; }
@@ -554,11 +554,10 @@ input[type="button"] {
     .chose-your-presents .gallery .item {
       width: 150px;
       display: inline-block;
-      margin: 5px;
+      margin: 3px;
       text-align: left;
       line-height: 16px;
       padding: 7px;
-      padding-top: 4px;
       position: relative;
       cursor: pointer; }
       .chose-your-presents .gallery .item:hover {
@@ -631,7 +630,7 @@ input[type="button"] {
         margin-right: -20px; }
       .chose-your-presents .gallery .item .already {
         width: 154px;
-        height: 215px;
+        height: 218px;
         background: #fff;
         position: absolute;
         display: none;
@@ -648,16 +647,17 @@ input[type="button"] {
           font: 16px "Signika", sans-serif;
           color: #1b75ba; }
       .chose-your-presents .gallery .item .dropdown-content {
-        display: none; }
+        display: none;
+        position: relative; }
     .chose-your-presents .gallery .item1 .cover {
       background-image: url("../img/item-cover-1.png");
-      background-position: -5px -9px; }
+      background-position: -8px -9px; }
     .chose-your-presents .gallery .item2 .cover {
       background-image: url("../img/item-cover-2.png");
-      background-position: -20px -20px; }
+      background-position: -27px -33px; }
     .chose-your-presents .gallery .item3 .cover {
       background-image: url("../img/item-cover-3.png");
-      background-position: -20px -20px; }
+      background-position: -28px -20px; }
     .chose-your-presents .gallery .item4 .cover {
       background-image: url("../img/item-cover-4.png");
       background-position: -20px -20px; }
@@ -693,7 +693,7 @@ input[type="button"] {
     text-align: center;
     color: #9f9e9e;
     font-family: "Ubuntu", serif;
-    margin: 20px 0 10px 0; }
+    margin: 25px 0 5px 0; }
 
 .wish-list {
   display: inline-block;
@@ -784,9 +784,10 @@ input[type="button"] {
       font: 12px "Ubuntu", serif;
       position: absolute;
       bottom: 20px;
-      left: 35%;
-      color: #a3acb3;
-      margin-left: 10px; }
+      left: 33%;
+      margin-left: 12px;
+      margin-bottom: -3px;
+      color: #a3acb3; }
       .wish-list .article .read-more:hover {
         color: #000; }
     .wish-list .article .clip1 {
@@ -801,10 +802,11 @@ input[type="button"] {
     height: 635px;
     padding: 0 25px;
     margin-left: -15px;
-    padding-left: 28px; }
+    padding-left: 28px;
+    margin-top: 15px; }
     .wish-list .item-wishlist .item {
       display: inline-block;
-      margin: 15px 0;
+      margin: 14px 0;
       text-align: left;
       border-radius: 0.4em;
       position: relative;
@@ -828,12 +830,11 @@ input[type="button"] {
         top: 20px;
         background: #f7f7f7;
         color: #d93655;
-        font: 12px "Ubuntu", serif;
+        font: 16px "Ubuntu", serif;
         font-weight: 500;
         text-transform: none;
-        letter-spacing: 1px;
-        padding-top: 3px;
-        min-width: 110px; }
+        letter-spacing: 0px;
+        padding-top: 3px; }
         @media only screen and (max-width: 425px) {
           .wish-list .item-wishlist .item:hover .view-item {
             display: inline-block;
@@ -848,15 +849,15 @@ input[type="button"] {
         display: block;
         position: absolute;
         height: 40px;
-        right: 10px;
-        min-width: 138px;
+        right: -6px;
+        min-width: 144px;
         top: 20px;
         background: #f7f7f7;
         color: #d93655;
-        font: 12px "Ubuntu", serif;
+        font: 16px "Ubuntu", serif;
         text-transform: none;
         font-weight: 500;
-        letter-spacing: 1px;
+        letter-spacing: 0px;
         font-family: "Ubuntu", sans-serif; }
         @media only screen and (max-width: 425px) {
           .wish-list .item-wishlist .item:hover .more-options {
@@ -871,7 +872,7 @@ input[type="button"] {
       .wish-list .item-wishlist .item .clip {
         position: absolute;
         left: -18px;
-        top: 10px;
+        top: 23px;
         z-index: 330; }
       .wish-list .item-wishlist .item .cover {
         height: 70px;
@@ -881,21 +882,29 @@ input[type="button"] {
         float: left;
         display: inline-block;
         margin-right: 10px;
+        margin-left: 4px;
         position: relative;
         background-position: center; }
       .wish-list .item-wishlist .item .item-name {
-        font: 1.2em "Pacifico", cursive;
+        font: 20px "Pacifico", cursive;
         color: #1b75ba;
-        line-height: 20px;
-        display: block; }
+        line-height: 1.74;
+        display: block;
+        margin-top: -2px; }
         .wish-list .item-wishlist .item .item-name:hover {
           color: #FF851B; }
       .wish-list .item-wishlist .item .item-price {
         color: #d93655;
-        font: 14px "Ubuntu", serif medium;
-        display: block; }
+        font: 16px "Ubuntu", serif;
+        font-weight: 500;
+        display: block;
+        margin-top: 2px; }
       .wish-list .item-wishlist .item .by {
-        display: block; }
+        display: block;
+        color: #000;
+        font: 16px "Ubuntu", serif;
+        font-weight: 500;
+        margin-top: 5px; }
         .wish-list .item-wishlist .item .by img {
           vertical-align: middle;
           margin-left: 5px; }
@@ -909,15 +918,9 @@ input[type="button"] {
         display: none;
         font: 20px "Ubuntu", sans-serif;
         font-weight: 700; }
-        .wish-list .item-wishlist .item .view-item:hover {
-          background-color: #FBFFA3;
-          color: #85144B; }
       .wish-list .item-wishlist .item .more-options {
         display: none;
         font-family: "Ubuntu", sans-serif; }
-        .wish-list .item-wishlist .item .more-options:hover {
-          background-color: #FBFFA3;
-          color: #85144B; }
       .wish-list .item-wishlist .item .dropdown-arrow {
         display: inline-block;
         vertical-align: middle;
@@ -943,12 +946,9 @@ input[type="button"] {
         .wish-list .item-wishlist .item .dropdown-content .remove,
         .wish-list .item-wishlist .item .dropdown-content .re-assign {
           color: #d93655;
-          font: 18px "Ubuntu", sans-serif medium;
-          letter-spacing: 0.2px; }
-          .wish-list .item-wishlist .item .dropdown-content .remove:hover,
-          .wish-list .item-wishlist .item .dropdown-content .re-assign:hover {
-            background-color: #FBFFA3;
-            color: #85144B; }
+          font: 15px "Ubuntu", sans-serif;
+          font-weight: 500;
+          letter-spacing: 0px; }
       .wish-list .item-wishlist .item .dropdown-content-show {
         display: block;
         border: 1px solid #de5872;
