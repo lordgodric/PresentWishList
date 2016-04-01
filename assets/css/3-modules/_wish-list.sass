@@ -82,6 +82,7 @@
 		position: relative
 		text-align: left
 		padding-top: 15px
+		// margin-bottom: 25px
 
 		.article-cover-1
 			display: inline-block
@@ -121,17 +122,18 @@
 
 		hr
 			margin: 4px 2px
-			// color: #f5c9d1
+			color: #f5c9d1
 
 
 	.item-wishlist
 		overflow-x: scroll
 		overflow-x: hidden
-		height: 635px
+		height: 640px
 		padding: 0 25px
 		margin-left: -15px
 		padding-left: 28px
 		margin-top: 15px
+
 
 
 		.item
@@ -175,11 +177,10 @@
 					@media only screen and (max-width: 425px)
 						display: inline-block
 						top: 10px
-						width: 120px
-						left: -64px
+						width: 150px
+						left: -74px
 						margin-left: 50%
-						// left: 0
-						right: 0
+						// right: 0
 						text-align: center
 						height: 30px
 
@@ -201,7 +202,7 @@
 					@media only screen and (max-width: 425px)
 						display: inline-block
 						top: 45px
-						width: 120px
+						width: 150px
 						left: -74px
 						margin-left: 50%
 						right: 0
@@ -227,15 +228,54 @@
 				position: relative
 				background-position: center
 
+			.removed-bg
+				display: none
+				background-image: url("../img/shape-48.png")
+				background-size: cover
+				position: absolute
+				top: 0
+				height: 85px
+				width: 105%
+				padding: 0
+				border-radius: 0.3em
+
+				.removed-text
+					position: absolute
+					margin-left: 16%
+					margin-top: 28px
+					height: 33px
+					cursor: auto
+					background-color: #fff
+					color: #6d6d6d
+					font: 16px 'Ubuntu', sans-serif 
+					font-weight: 500
+					letter-spacing: 0px
+					text-transform: none
+					border: none
+
+					@media only screen and (max-width: 360px)
+						// height: 5px
+						white-space: normal
+						margin-left: 30px
+					@media only screen and (max-width: 360px)
+						// height: 5px
+						white-space: normal
+						margin-left: 10px
+						
+
 			.item-name
 				font: 20px 'Pacifico', cursive
 				color: #1b75ba
-				line-height: 1.74
 				display: block
+				width: 100%
 				margin-top: -2px
+				
 
-				&:hover
-					color: $orange
+				@media only screen and (max-width: 480px)
+					white-space: nowrap
+					text-overflow: ellipsis
+					width: 50%
+					overflow: hidden
 
 			.item-price
 				color: $cherry
@@ -388,28 +428,34 @@
 
 			.logo-transparent
 				position: absolute
-				bottom: -200px
-				margin: auto
+				bottom: -220px
+				margin: 0 auto
+				left: 8px
 				width: 100%
 
 		.list-full
 			position: static
 
 	.share
+		// position: relative
 
 		hr
-			margin: 5px 2px
+			position: relative
+			bottom: 30px
+			margin: 4px 2px
 			padding: 0
+			color: #f5c9d1
 
 		.share-button
-			// margin-top: 100px
-			height: 91px
+			margin-top: -10px
+			width: 100%
+			height: 90px
 			background-image: url("../img/share-button-bg.png")
 			background-position: -2px 1px
 			border-radius: 0.3em
 			border-top-left-radius: 0px
 			border-top-right-radius: 0px
-			font: bold 28px 'Ubuntu', sans-serif
+			font: bold 30px 'Ubuntu', sans-serif
 			// line-height: 90px
 			vertical-align: middle
 			position: relative
@@ -418,11 +464,11 @@
 				border: 1px solid #333
 				border-radius: 0.2em
 				width: 100%
-				padding: 10px 75px
+				padding: 12px 72px
 				box-shadow: 0px 1px 0px 0px rgb(120,120,120), 0px 1px 0px 0px rgb(150,150,150) inset, -0.8px 0px 1px 0px rgb(75,75,75) inset
 				color: #fff
 				position: relative
-				top: 33%
+				top: 31%
 
 				&:hover
 					color: $lime

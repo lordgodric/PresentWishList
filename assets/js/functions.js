@@ -16,7 +16,7 @@ $( document ).ready(function() {
 		}
 	}
 
-	//Функція копіювання обкладинки для товару
+	// Функція копіювання обкладинки для товару
   	function copyBackgroundImage() {
   		var target = $( event.target ) || $(event.srcElement)
 
@@ -25,7 +25,7 @@ $( document ).ready(function() {
 
   		// Якщо натиснули на зображення товару
   		if (target.is('.cover')) {
-  			console.log('zobr');
+  			// console.log('zobr');
 			$('.item:last > .cover').css('background', $(event.target).css('background'));
 
 		// Якщо натиснули на елемент товару
@@ -36,20 +36,47 @@ $( document ).ready(function() {
   				'background-position' : 'center',
   			});
   			if ($(event.srcElement).is('.item')) {
-  				var bg = $(event.srcElement).find('.cover').css('background-image');
-  				$('.item:last > .cover').css({
-  				'background' : bg,
-  				'background-position' : 'center',
-  			});
+	  			var bg = $(event.srcElement).find('.cover').css('background-image');
+	  			$('.item:last > .cover').css({
+	  				'background' : bg,
+	  				'background-position' : 'center',
+	  			});
   			}
 
   		// Якщо натиснули на саму обгортку товару
   		}	
   		if (target.is('.item')) {
-  			console.log('obg');
+  			// console.log('obg');
   			$('.item:last > .cover').css('background', $(target.find('.cover')).css('background'));
-  			console.log($('event.srcElement'));
+  			// console.log($('event.srcElement'));
   		}
+	}
+
+	// Функція показу випадаючого меню
+	function showDropDown() {
+		$('.item-wishlist .item:last').hover(function(){
+			$('.more-options').click(function() {
+				$(this).find('.dropdown-content').toggleClass('dropdown-content-show');
+				$(this).toggleClass('more-options-open');
+			});
+
+			$('.more-options').mouseleave(function(event) {
+				$(this).find('.dropdown-content').removeClass('dropdown-content-show')
+				$(this).removeClass('more-options-open')
+			});				
+		});
+	}
+
+	// Функція видалення товару з корзини
+	function removeItem() {
+	 	$('.item-wishlist .item:last .remove').click(function(){
+
+				$(this).closest('.item').find('.removed-bg').css('display', 'block');
+				$(this).closest('.item').find('.red-bg').removeClass('red-bg');
+				$(this).closest('.item').find('.more-options').hide();
+				$(this).closest('.item').find('.view-item').remove();
+
+		});
 	}
 
 	// Адаптивне меню для мобільного вигляду
@@ -66,6 +93,7 @@ $( document ).ready(function() {
 	// Копіюємо всі блоки із галереї товарів до списку та трішки редагуємо їх
 	// Клік по елементу
 	$(".item").click(function() {
+		console.log('test');
 	
 
 		// Перемикаємо класс .mark по кліку
@@ -83,19 +111,6 @@ $( document ).ready(function() {
 		  	// Копіюємо обраний товар та добавляємо до копії нашу випадкову скріпку
 		  	$(this).clone().appendTo($(".item-wishlist")).prepend('<img class="clip"src="assets/img/clip' + randomNumber + '.png"/>');
 		  	$('.item-wishlist > .item > .item-name').text('Remote control Tractor');
-
-
-		  	$('.item-wishlist .item:last').hover(function(){
-				console.log("hover");
-				$('.more-options').click(function() {
-					$(this).find('.dropdown-content').toggleClass('dropdown-content-show');
-					$(this).toggleClass('more-options-open');
-				});
-				$('.more-options').mouseleave(function(event) {
-					$(this).find('.dropdown-content').removeClass('dropdown-content-show')
-					$(this).removeClass('more-options-open')
-				});				
-			});
 
 	  		//Виклик функції копіювання обкладинки для товару
 		  	copyBackgroundImage();
@@ -144,8 +159,13 @@ $( document ).ready(function() {
 				console.log('error');
 			}
 
+			showDropDown()
+
 		}
-			listEmptyMessage();
+
+		showDropDown()
+		removeItem()
+		listEmptyMessage();
 
   	});
 	

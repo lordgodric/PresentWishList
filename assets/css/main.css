@@ -407,7 +407,7 @@ input[type="button"] {
   width: 140px;
   padding-left: 9px;
   margin: 0 auto;
-  padding-bottom: 10px; }
+  padding-bottom: 15px; }
   .social .facebook, .social .twiiter {
     background-image: url("../img/social.png");
     height: 46px;
@@ -524,6 +524,8 @@ input[type="button"] {
       font-size: 20px;
       border-radius: 0.3em;
       border: 1px solid #ccc; }
+      .chose-your-presents .search form input[type="search"]:focus {
+        outline: none; }
       @media only screen and (max-width: 767px) {
         .chose-your-presents .search form input[type="search"] {
           width: 95%;
@@ -649,6 +651,8 @@ input[type="button"] {
       .chose-your-presents .gallery .item .dropdown-content {
         display: none;
         position: relative; }
+      .chose-your-presents .gallery .item .removed-text {
+        display: none; }
     .chose-your-presents .gallery .item1 .cover {
       background-image: url("../img/item-cover-1.png");
       background-position: -8px -9px; }
@@ -795,11 +799,12 @@ input[type="button"] {
       left: -3px;
       top: 50px; }
     .wish-list .article hr {
-      margin: 4px 2px; }
+      margin: 4px 2px;
+      color: #f5c9d1; }
   .wish-list .item-wishlist {
     overflow-x: scroll;
     overflow-x: hidden;
-    height: 635px;
+    height: 640px;
     padding: 0 25px;
     margin-left: -15px;
     padding-left: 28px;
@@ -839,10 +844,9 @@ input[type="button"] {
           .wish-list .item-wishlist .item:hover .view-item {
             display: inline-block;
             top: 10px;
-            width: 120px;
-            left: -64px;
+            width: 150px;
+            left: -74px;
             margin-left: 50%;
-            right: 0;
             text-align: center;
             height: 30px; } }
       .wish-list .item-wishlist .item:hover .more-options {
@@ -863,7 +867,7 @@ input[type="button"] {
           .wish-list .item-wishlist .item:hover .more-options {
             display: inline-block;
             top: 45px;
-            width: 120px;
+            width: 150px;
             left: -74px;
             margin-left: 50%;
             right: 0;
@@ -885,14 +889,49 @@ input[type="button"] {
         margin-left: 4px;
         position: relative;
         background-position: center; }
+      .wish-list .item-wishlist .item .removed-bg {
+        display: none;
+        background-image: url("../img/shape-48.png");
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        height: 85px;
+        width: 105%;
+        padding: 0;
+        border-radius: 0.3em; }
+        .wish-list .item-wishlist .item .removed-bg .removed-text {
+          position: absolute;
+          margin-left: 16%;
+          margin-top: 28px;
+          height: 33px;
+          cursor: auto;
+          background-color: #fff;
+          color: #6d6d6d;
+          font: 16px "Ubuntu", sans-serif;
+          font-weight: 500;
+          letter-spacing: 0px;
+          text-transform: none;
+          border: none; }
+          @media only screen and (max-width: 360px) {
+            .wish-list .item-wishlist .item .removed-bg .removed-text {
+              white-space: normal;
+              margin-left: 30px; } }
+          @media only screen and (max-width: 360px) {
+            .wish-list .item-wishlist .item .removed-bg .removed-text {
+              white-space: normal;
+              margin-left: 10px; } }
       .wish-list .item-wishlist .item .item-name {
         font: 20px "Pacifico", cursive;
         color: #1b75ba;
-        line-height: 1.74;
         display: block;
+        width: 100%;
         margin-top: -2px; }
-        .wish-list .item-wishlist .item .item-name:hover {
-          color: #FF851B; }
+        @media only screen and (max-width: 480px) {
+          .wish-list .item-wishlist .item .item-name {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 50%;
+            overflow: hidden; } }
       .wish-list .item-wishlist .item .item-price {
         color: #d93655;
         font: 16px "Ubuntu", serif;
@@ -998,33 +1037,39 @@ input[type="button"] {
         color: #a3acb3; }
       .wish-list .item-wishlist .list-empty .logo-transparent {
         position: absolute;
-        bottom: -200px;
-        margin: auto;
+        bottom: -220px;
+        margin: 0 auto;
+        left: 8px;
         width: 100%; }
     .wish-list .item-wishlist .list-full {
       position: static; }
   .wish-list .share hr {
-    margin: 5px 2px;
-    padding: 0; }
+    position: relative;
+    bottom: 30px;
+    margin: 4px 2px;
+    padding: 0;
+    color: #f5c9d1; }
   .wish-list .share .share-button {
-    height: 91px;
+    margin-top: -10px;
+    width: 100%;
+    height: 90px;
     background-image: url("../img/share-button-bg.png");
     background-position: -2px 1px;
     border-radius: 0.3em;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    font: bold 28px "Ubuntu", sans-serif;
+    font: bold 30px "Ubuntu", sans-serif;
     vertical-align: middle;
     position: relative; }
     .wish-list .share .share-button a {
       border: 1px solid #333;
       border-radius: 0.2em;
       width: 100%;
-      padding: 10px 75px;
+      padding: 12px 72px;
       box-shadow: 0px 1px 0px 0px #787878, 0px 1px 0px 0px #969696 inset, -0.8px 0px 1px 0px #4b4b4b inset;
       color: #fff;
       position: relative;
-      top: 33%; }
+      top: 31%; }
       .wish-list .share .share-button a:hover {
         color: #01FF70;
         border: 1px solid #000; }

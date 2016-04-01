@@ -407,6 +407,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/img\/Chose-Presents.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.60911e+06,
+		"inputAbbreviatedPath": "\/assets\/img\/Chose-Presents.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Chose-Presents.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/clip1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -583,13 +594,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/img\/limit.png": {
+	"\/assets\/img\/Layer-5.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 67494,
-		"inputAbbreviatedPath": "\/assets\/img\/limit.png",
-		"outputAbbreviatedPath": "\/assets\/img\/limit.png",
+		"initialSize": 3.12514e+06,
+		"inputAbbreviatedPath": "\/assets\/img\/Layer-5.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Layer-5.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -598,7 +609,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 134326,
+		"initialSize": 138388,
 		"inputAbbreviatedPath": "\/assets\/img\/lines.png",
 		"outputAbbreviatedPath": "\/assets\/img\/lines.png",
 		"outputPathIsOutsideProject": 0,
@@ -612,17 +623,6 @@
 		"initialSize": 516,
 		"inputAbbreviatedPath": "\/assets\/img\/link-icon.png",
 		"outputAbbreviatedPath": "\/assets\/img\/link-icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/logo-transparent.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 6759,
-		"inputAbbreviatedPath": "\/assets\/img\/logo-transparent.png",
-		"outputAbbreviatedPath": "\/assets\/img\/logo-transparent.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -645,17 +645,6 @@
 		"initialSize": 3.12583e+06,
 		"inputAbbreviatedPath": "\/assets\/img\/main-bg.png",
 		"outputAbbreviatedPath": "\/assets\/img\/main-bg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/img\/pages2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 12999,
-		"inputAbbreviatedPath": "\/assets\/img\/pages2.jpg",
-		"outputAbbreviatedPath": "\/assets\/img\/pages2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -733,6 +722,17 @@
 		"initialSize": 402,
 		"inputAbbreviatedPath": "\/assets\/img\/Shape-38.png",
 		"outputAbbreviatedPath": "\/assets\/img\/Shape-38.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/Shape-48.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 328,
+		"inputAbbreviatedPath": "\/assets\/img\/Shape-48.png",
+		"outputAbbreviatedPath": "\/assets\/img\/Shape-48.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
