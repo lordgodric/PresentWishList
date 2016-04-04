@@ -318,6 +318,10 @@ input[type="button"] {
     .sign {
       position: static;
       text-align: center; } }
+  .sign a {
+    color: #f6f6f6;
+    letter-spacing: 0.3px;
+    line-height: 1.25; }
   .sign button {
     background-color: #1b75ba;
     color: #f6f6f6;
@@ -328,10 +332,11 @@ input[type="button"] {
     .sign button span {
       font-size: 12px;
       letter-spacing: 0.1px; }
+    .sign button:hover {
+      color: #01FF70; }
   .sign .register {
-    width: 105px;
-    padding: 0px 12px;
-    margin-right: -4px;
+    padding: 0px 9px;
+    margin-right: -5px;
     border-bottom-right-radius: 0px;
     border-right: solid #3c89cf 2px; }
   .sign .register-icon, .sign .login-icon {
@@ -351,12 +356,6 @@ input[type="button"] {
     background-position: 20px;
     margin-right: 5px;
     margin-left: -10px; }
-  .sign a {
-    color: #f6f6f6;
-    letter-spacing: 0.3px;
-    line-height: 1.25; }
-    .sign a:hover {
-      color: #01FF70; }
 
 .header-nav {
   display: inline-block;
@@ -455,7 +454,8 @@ input[type="button"] {
       max-width: 40%; } }
   @media only screen and (max-width: 880px) {
     .chose-your-presents {
-      max-width: 500px; } }
+      max-width: 500px;
+      margin-bottom: 20px; } }
   .chose-your-presents .chose-header {
     font-size: 50px;
     color: #d93655;
@@ -705,18 +705,20 @@ input[type="button"] {
   margin-bottom: 200px;
   max-width: 355px;
   min-width: 260px;
-  height: 874px;
   vertical-align: top;
-  border-radius: 0.3em;
+  border-radius: 0.2em;
   box-shadow: 0px 0px 8px 0px #646464;
   background-image: url("../img/lines.png");
   background-position: -2px 30px;
   background-color: #fff; }
+  @media only screen and (max-width: 880px) {
+    .wish-list {
+      margin-bottom: 20px; } }
   .wish-list .wishlist-header {
     height: 60px;
     background-image: url("../img/wishlist-header.png");
     background-position: -1px;
-    border-radius: 0.3em;
+    border-radius: 0.2em;
     position: relative; }
     .wish-list .wishlist-header .list-header-text {
       display: block;
@@ -804,11 +806,12 @@ input[type="button"] {
   .wish-list .item-wishlist {
     overflow-x: scroll;
     overflow-x: hidden;
-    height: 640px;
+    height: 610px;
     padding: 0 25px;
     margin-left: -15px;
     padding-left: 28px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 35px; }
     .wish-list .item-wishlist .item {
       display: inline-block;
       margin: 14px 0;
@@ -1043,41 +1046,46 @@ input[type="button"] {
         width: 100%; }
     .wish-list .item-wishlist .list-full {
       position: static; }
-  .wish-list .share hr {
-    position: relative;
-    bottom: 30px;
-    margin: 4px 2px;
-    padding: 0;
-    color: #f5c9d1; }
-  .wish-list .share .share-button {
-    margin-top: -10px;
-    width: 100%;
-    height: 90px;
-    background-image: url("../img/share-button-bg.png");
-    background-position: -2px 1px;
-    border-radius: 0.3em;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    font: bold 30px "Ubuntu", sans-serif;
-    vertical-align: middle;
-    position: relative; }
-    .wish-list .share .share-button a {
-      border: 1px solid #333;
-      border-radius: 0.2em;
-      width: 100%;
-      padding: 12px 72px;
-      box-shadow: 0px 1px 0px 0px #787878, 0px 1px 0px 0px #969696 inset, -0.8px 0px 1px 0px #4b4b4b inset;
-      color: #fff;
+  .wish-list .share {
+    margin-bottom: -3px; }
+    .wish-list .share hr {
       position: relative;
-      top: 31%; }
-      .wish-list .share .share-button a:hover {
-        color: #01FF70;
-        border: 1px solid #000; }
-      @media only screen and (max-width: 767px) {
-        .wish-list .share .share-button a {
-          font-size: 16px;
-          text-align: center;
-          top: 27%; } }
+      bottom: 30px;
+      margin: 4px 2px;
+      padding: 0;
+      color: #f5c9d1; }
+    .wish-list .share .share-button {
+      margin-top: -13px;
+      width: 100%;
+      height: 90px;
+      background-image: url("../img/share-button-bg.png");
+      background-position: -1px 2px;
+      border-radius: 0.2em;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      font: bold 30px "Ubuntu", sans-serif;
+      vertical-align: middle;
+      position: relative;
+      box-shadow: 0px 0.5px 0px 0px #646464; }
+      .wish-list .share .share-button a {
+        border: 1px solid #333;
+        border-radius: 0.1em;
+        width: 100%;
+        padding: 12px 72px;
+        box-shadow: 0px 2px 0px 0px #336694, 0px 1px 0px 0px #3a84b9 inset;
+        border-top-color: #06538d;
+        border-right-color: #154a76;
+        color: #fff;
+        position: relative;
+        top: 33%; }
+        .wish-list .share .share-button a:hover {
+          color: #01FF70;
+          border: 1px solid #000; }
+        @media only screen and (max-width: 767px) {
+          .wish-list .share .share-button a {
+            font-size: 16px;
+            text-align: center;
+            top: 27%; } }
 
 body {
   margin: 10px;

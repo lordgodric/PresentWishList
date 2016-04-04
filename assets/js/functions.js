@@ -1,5 +1,8 @@
 $( document ).ready(function() {
 
+  		showDropDown()
+
+
 	// Функція виводу(ховання) повідомлення щодо порожньої корзини
 	function listEmptyMessage() {
 
@@ -16,40 +19,51 @@ $( document ).ready(function() {
 		}
 	}
 
+	
+
 	// Функція копіювання обкладинки для товару
-  	function copyBackgroundImage() {
-  		var target = $( event.target ) || $(event.srcElement)
+  	function copyBackgroundImage(x) {
 
-  		// console.log($(event.target));
-  		// console.log($(event.srcElement));
 
-  		// Якщо натиснули на зображення товару
-  		if (target.is('.cover')) {
-  			// console.log('zobr');
-			$('.item:last > .cover').css('background', $(event.target).css('background'));
+	  	targett = x
+	  	console.log(targett);
 
-		// Якщо натиснули на елемент товару
-  		} else {
-  			var bg = $(event.srcElement).parent('.item').find('.cover').css('background-image');
-  			$('.item:last > .cover').css({
-  				'background' : bg,
-  				'background-position' : 'center',
-  			});
-  			if ($(event.srcElement).is('.item')) {
-	  			var bg = $(event.srcElement).find('.cover').css('background-image');
+	  	var FF = !(window.mozInnerScreenX == null);
+
+	  	// Якщо браузер firefox
+		if(FF) {
+	  	$('.item:last > .cover').css('background', $(targett.find('.cover')).css('background-image'));
+			console.log(targett.find('.cover'));
+
+		// Якщо інший браузер
+		} else {
+
+			var target = $(event.target) || $(event.srcElement)
+
+	  		// Якщо натиснули на зображення товару
+	  		if (target.is('.cover')) {
+				$('.item:last > .cover').css('background', $(event.target).css('background'));
+
+			// Якщо натиснули на елемент товару
+	  		} else {
+	  			var bg = $(event.srcElement).parent('.item').find('.cover').css('background-image');
 	  			$('.item:last > .cover').css({
 	  				'background' : bg,
 	  				'background-position' : 'center',
 	  			});
-  			}
+	  			if ($(event.srcElement).is('.item')) {
+		  			var bg = $(event.srcElement).find('.cover').css('background-image');
+		  			$('.item:last > .cover').css({
+		  				'background' : bg,
+		  				'background-position' : 'center',
+		  			});
+	  			}
 
-  		// Якщо натиснули на саму обгортку товару
-  		}	
-  		if (target.is('.item')) {
-  			// console.log('obg');
-  			$('.item:last > .cover').css('background', $(target.find('.cover')).css('background'));
-  			// console.log($('event.srcElement'));
-  		}
+	  		// Якщо натиснули на саму обгортку товару
+	  		} if (target.is('.item')) {
+		  		$('.item:last > .cover').css('background', $(target.find('.cover')).css('background'));
+		  	  }
+		}
 	}
 
 	// Функція показу випадаючого меню
@@ -85,6 +99,8 @@ $( document ).ready(function() {
 		$('.l-header-content').toggleClass('l-header-mini');
 		if (!$('.l-header-content').hasClass('l-header-mini')) {
 			$('.header-nav').hide();
+			// if ($(window).width()) {}
+			
 		} else {
 			$('.header-nav').show();
 		}
@@ -113,7 +129,7 @@ $( document ).ready(function() {
 		  	$('.item-wishlist > .item > .item-name').text('Remote control Tractor');
 
 	  		//Виклик функції копіювання обкладинки для товару
-		  	copyBackgroundImage();
+		  	copyBackgroundImage($(this));
 
 		  	// Створюємо змінну для збереження старого текста із класу .item-price
 		  	var oldText = $(this).children('.item-price').text();
