@@ -1,5 +1,7 @@
 .l-header
 	background-image: url("../img/pattern.png")
+	padding-right: 10%
+	padding-left: 10%
 	
 	.l-header-content
 		max-width: 960px
@@ -9,10 +11,13 @@
 		position: relative
 		@extend .l-header
 
-		@media only screen and (max-width: $screen-xs-max)
-			height: 200px
+		@media only screen and (max-width: 970px)
+			height: 250px
 
-		@media only screen and (min-width: $screen-sm-min)
+		@media only screen and (min-width: 971px)
+			height: 135px
+
+		@media only screen and (min-width: 970px)
 			display: block
 
 	.l-header-mini

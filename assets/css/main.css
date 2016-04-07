@@ -307,14 +307,13 @@ input[type="button"] {
   input[type="button"]:active,
   input[type="button"]:focus {
     color: #ccc;
-    border-color: #888;
     outline: 0; }
 
 .sign {
   position: absolute;
   top: -1px;
   right: -2px; }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 970px) {
     .sign {
       position: static;
       text-align: center; } }
@@ -362,25 +361,29 @@ input[type="button"] {
   position: absolute;
   right: -2px;
   top: 60px; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 970px) {
     .header-nav {
       position: static;
-      margin-top: 30px;
       text-align: center;
       width: 100%;
-      display: none; } }
+      display: none;
+      margin: 20px auto; } }
   .header-nav a {
-    margin: 0 10px 0 40px;
+    margin: 0 0px 0 40px;
     font-size: 18px;
     font-weight: 600; }
     @media only screen and (max-width: 767px) {
       .header-nav a {
         display: block;
         margin-left: 0; } }
+  @media only screen and (min-width: 767px) {
+    .header-nav {
+      display: inline-block !important; } }
 
 .hamburger {
   display: none;
-  position: static; }
+  position: static;
+  margin-top: 30px; }
   .hamburger .fa-bars {
     cursor: pointer; }
   @media only screen and (max-width: 767px) {
@@ -422,7 +425,16 @@ input[type="button"] {
     .headerLogo img {
       margin: 0 auto;
       display: block;
-      padding-top: 40px; } }
+      width: 100%;
+      padding-top: 30px; } }
+  @media only screen and (min-width: 460px) {
+    .headerLogo img {
+      width: auto; } }
+  @media only screen and (max-width: 970px) {
+    .headerLogo img {
+      padding-top: 30px;
+      margin: 0 auto;
+      display: block; } }
 
 .footerLogo img {
   margin: 0 auto;
@@ -446,7 +458,7 @@ input[type="button"] {
   box-shadow: 0px 0px 8px 0px #646464; }
   @media only screen and (max-width: 767px) {
     .chose-your-presents {
-      min-width: 250px;
+      min-width: 225px;
       padding: 10px;
       margin: 40px 0px 20px 0px; } }
   @media only screen and (max-width: 1014px) {
@@ -503,6 +515,10 @@ input[type="button"] {
       margin: 0 70px;
       font-size: 20px;
       color: #9f9e9e; }
+      @media only screen and (max-width: 350px) {
+        .chose-your-presents .steps p {
+          font-size: 18px;
+          margin-right: 0px; } }
     .chose-your-presents .steps hr {
       margin: 10px 0 13px 0; }
   .chose-your-presents .search p {
@@ -706,7 +722,7 @@ input[type="button"] {
   max-width: 355px;
   min-width: 260px;
   vertical-align: top;
-  border-radius: 0.2em;
+  border-radius: 3.2em;
   box-shadow: 0px 0px 8px 0px #646464;
   background-image: url("../img/lines.png");
   background-position: -2px 30px;
@@ -865,7 +881,15 @@ input[type="button"] {
         text-transform: none;
         font-weight: 500;
         letter-spacing: 0px;
-        font-family: "Ubuntu", sans-serif; }
+        font-family: "Ubuntu", sans-serif;
+        vertical-align: middle;
+        cursor: pointer; }
+        .wish-list .item-wishlist .item:hover .more-options span {
+          display: inline-block;
+          margin: 10px 0 10px 10px; }
+          @media only screen and (max-width: 425px) {
+            .wish-list .item-wishlist .item:hover .more-options span {
+              margin: 5px 0 10px 10px; } }
         @media only screen and (max-width: 425px) {
           .wish-list .item-wishlist .item:hover .more-options {
             display: inline-block;
@@ -962,7 +986,8 @@ input[type="button"] {
         font-weight: 700; }
       .wish-list .item-wishlist .item .more-options {
         display: none;
-        font-family: "Ubuntu", sans-serif; }
+        font-family: "Ubuntu", sans-serif;
+        border-radius: 4px; }
       .wish-list .item-wishlist .item .dropdown-arrow {
         display: inline-block;
         vertical-align: middle;
@@ -991,6 +1016,13 @@ input[type="button"] {
           font: 15px "Ubuntu", sans-serif;
           font-weight: 500;
           letter-spacing: 0px; }
+          .wish-list .item-wishlist .item .dropdown-content .remove img,
+          .wish-list .item-wishlist .item .dropdown-content .re-assign img {
+            margin-right: -5px; }
+          .wish-list .item-wishlist .item .dropdown-content .remove span,
+          .wish-list .item-wishlist .item .dropdown-content .re-assign span {
+            position: absolute;
+            margin-top: 0px; }
       .wish-list .item-wishlist .item .dropdown-content-show {
         display: block;
         border: 1px solid #de5872;
@@ -1002,7 +1034,6 @@ input[type="button"] {
             margin: 0px;
             margin-left: -1px; } }
       .wish-list .item-wishlist .item .more-options-open {
-        border: 1px solid #de5872;
         border-bottom: 1px solid #ebb5bf;
         border-bottom-left-radius: 0em;
         border-bottom-right-radius: 0em; }
@@ -1132,17 +1163,22 @@ body {
       margin-bottom: 0px; }
 
 .l-header, .chose-your-presents, .l-header .l-header-content {
-  background-image: url("../img/pattern.png"); }
+  background-image: url("../img/pattern.png");
+  padding-right: 10%;
+  padding-left: 10%; }
   .l-header .l-header-content, .chose-your-presents .l-header-content {
     max-width: 960px;
     background-color: #f6f6f6;
     margin: 0 auto;
     height: 135px;
     position: relative; }
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 970px) {
       .l-header .l-header-content, .chose-your-presents .l-header-content {
-        height: 200px; } }
-    @media only screen and (min-width: 768px) {
+        height: 250px; } }
+    @media only screen and (min-width: 971px) {
+      .l-header .l-header-content, .chose-your-presents .l-header-content {
+        height: 135px; } }
+    @media only screen and (min-width: 970px) {
       .l-header .l-header-content, .chose-your-presents .l-header-content {
         display: block; } }
   .l-header .l-header-mini, .chose-your-presents .l-header-mini {

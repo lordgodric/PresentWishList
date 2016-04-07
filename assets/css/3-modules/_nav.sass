@@ -3,32 +3,36 @@
 	position: absolute
 	right: -2px
 	top: 60px
-	// font: 
-	
-	@media only screen and (max-width: $screen-xs-max)
+
+	@media only screen and (max-width: 970px)
 		position: static
-		margin-top: 30px
+		// margin-top: 35px
 		text-align: center
 		width: 100%
 		display: none
+		margin: 20px auto
 
 	a
-		margin: 0 10px 0 40px
+		margin: 0 0px 0 40px
 		font-size: 18px
 		font-weight: 600
 
-		@media only screen and (max-width: $screen-xs-max)
+		@media only screen and (max-width: 767px)
 			display: block
 			margin-left: 0
+
+	@media only screen and (min-width: 767px)
+		display: inline-block !important
 
 .hamburger
 	display: none
 	position: static
+	margin-top: 30px
 
 	.fa-bars
 		cursor: pointer
 
-	@media only screen and (max-width: $screen-xs-max)
+	@media only screen and (max-width: 767px)
 		display: block
 		text-align: center
 
@@ -45,5 +49,5 @@
 			margin: 13px 
 			font-weight: bold
 
-			@media only screen and (max-width: $screen-xs-max)
+			@media only screen and (max-width: 767px)
 				display: block

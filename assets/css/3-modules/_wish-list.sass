@@ -1,13 +1,11 @@
 .wish-list
-	// @extend .l-header
 	display: inline-block
 	margin-top: 20px
 	margin-bottom: 200px
 	max-width: 355px
 	min-width: 260px
-	// height: 914px
 	vertical-align: top
-	border-radius: 0.2em
+	border-radius: 3.2em
 	box-shadow: 0px 0px 8px 0px rgb(100,100,100)
 	background-image: url("../img/lines.png")
 	background-position: -2px 30px
@@ -18,7 +16,6 @@
 
 	.wishlist-header
 		height: 60px
-		// width: 100%
 		background-image: url("../img/wishlist-header.png")
 		background-position: -1px
 		border-radius: 0.2em
@@ -60,7 +57,6 @@
 
 			img
 				height: 25px
-				// margin-left: 2px
 				margin-top: -3px
 
 		.pencil-icon
@@ -200,6 +196,15 @@
 					font-weight: 500
 					letter-spacing: 0px
 					font-family: 'Ubuntu', sans-serif
+					vertical-align: middle
+					cursor: pointer
+
+					span
+						display: inline-block
+						margin: 10px 0 10px 10px
+
+						@media only screen and (max-width: 425px)
+							margin: 5px 0 10px 10px
 
 					@media only screen and (max-width: 425px)
 						display: inline-block
@@ -211,6 +216,9 @@
 						text-align: center
 						// margin: auto
 						height: 30px
+
+						
+						
 
 			.clip
 				position: absolute
@@ -324,8 +332,12 @@
 			.more-options
 				display: none
 				font-family: 'Ubuntu', sans-serif
+				border-radius: 4px
 
-				// &:hover
+				&:hover
+					// border: 1px solid #bbb
+					// outline: 1
+					// box-sizing: border-box
 				// 	background-color: $dropdownHover
 				// 	color: $maroon
 
@@ -363,6 +375,13 @@
 					font-weight: 500
 					letter-spacing: 0px
 
+					img
+						margin-right: -5px
+
+					span
+						position: absolute
+						margin-top: 0px
+
 					// &:hover
 					// 	background-color: $dropdownHover
 					// 	color: $maroon
@@ -380,7 +399,7 @@
 					margin-left: -1px
 
 			.more-options-open
-				border: 1px solid #de5872
+				// border: 1px solid #de5872
 				border-bottom: 1px solid #ebb5bf
 				border-bottom-left-radius: 0em
 				border-bottom-right-radius: 0em
