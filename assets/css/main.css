@@ -359,7 +359,7 @@ input[type="button"] {
 .header-nav {
   display: inline-block;
   position: absolute;
-  right: -2px;
+  right: 5px;
   top: 60px; }
   @media only screen and (max-width: 970px) {
     .header-nav {
@@ -369,7 +369,7 @@ input[type="button"] {
       display: none;
       margin: 20px auto; } }
   .header-nav a {
-    margin: 0 0px 0 40px;
+    margin: 0 5px 0 40px;
     font-size: 18px;
     font-weight: 600; }
     @media only screen and (max-width: 767px) {
@@ -395,7 +395,7 @@ input[type="button"] {
   text-align: center; }
   .footer-nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
     margin-bottom: 0px; }
     .footer-nav ul li {
       display: inline-block;
@@ -420,7 +420,7 @@ input[type="button"] {
     background-position: 46px; }
 
 .headerLogo img {
-  margin: 23px 0; }
+  margin: 23px 0px; }
   @media only screen and (max-width: 767px) {
     .headerLogo img {
       margin: 0 auto;
@@ -435,7 +435,7 @@ input[type="button"] {
 .footerLogo img {
   margin: 0 auto;
   display: block;
-  padding: 50px 0 5px 0; }
+  padding: 50px 0 8px 0; }
 
 .copyright {
   text-align: center;
@@ -500,9 +500,10 @@ input[type="button"] {
     .chose-your-presents .steps p {
       display: inline-block;
       text-align: center;
-      margin: 0 70px;
+      margin: 0;
       font-size: 20px;
-      color: #9f9e9e; }
+      color: #9f9e9e;
+      margin-left: -10px; }
       @media only screen and (max-width: 370px) {
         .chose-your-presents .steps p {
           font-size: 18px;
