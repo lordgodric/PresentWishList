@@ -376,7 +376,7 @@ input[type="button"] {
       .header-nav a {
         display: block;
         margin-left: 0; } }
-  @media only screen and (min-width: 767px) {
+  @media only screen and (min-width: 768px) {
     .header-nav {
       display: inline-block !important; } }
 
@@ -425,11 +425,7 @@ input[type="button"] {
     .headerLogo img {
       margin: 0 auto;
       display: block;
-      width: 100%;
       padding-top: 30px; } }
-  @media only screen and (min-width: 460px) {
-    .headerLogo img {
-      width: auto; } }
   @media only screen and (max-width: 970px) {
     .headerLogo img {
       padding-top: 30px;
@@ -450,24 +446,16 @@ input[type="button"] {
   padding-bottom: 5px; }
 
 .chose-your-presents {
+  background-image: url("../img/pattern.png");
   display: inline-block;
   max-width: 503px;
   margin: 20px 30px 180px 0;
   padding: 20px 35px;
   border-radius: 0.3em;
   box-shadow: 0px 0px 8px 0px #646464; }
-  @media only screen and (max-width: 767px) {
-    .chose-your-presents {
-      min-width: 225px;
-      padding: 10px;
-      margin: 40px 0px 20px 0px; } }
-  @media only screen and (max-width: 1014px) {
-    .chose-your-presents {
-      max-width: 40%; } }
   @media only screen and (max-width: 880px) {
     .chose-your-presents {
-      max-width: 500px;
-      margin-bottom: 20px; } }
+      margin: 20px auto 20px; } }
   .chose-your-presents .chose-header {
     font-size: 50px;
     color: #d93655;
@@ -515,10 +503,10 @@ input[type="button"] {
       margin: 0 70px;
       font-size: 20px;
       color: #9f9e9e; }
-      @media only screen and (max-width: 350px) {
+      @media only screen and (max-width: 370px) {
         .chose-your-presents .steps p {
           font-size: 18px;
-          margin-right: 0px; } }
+          margin-right: -10px; } }
     .chose-your-presents .steps hr {
       margin: 10px 0 13px 0; }
   .chose-your-presents .search p {
@@ -1162,26 +1150,27 @@ body {
     .page-home article:last-child {
       margin-bottom: 0px; }
 
-.l-header, .chose-your-presents, .l-header .l-header-content {
-  background-image: url("../img/pattern.png");
-  padding-right: 10%;
-  padding-left: 10%; }
-  .l-header .l-header-content, .chose-your-presents .l-header-content {
+.l-header, .l-header .l-header-content {
+  background-image: url("../img/pattern.png"); }
+  .l-header .l-header-content {
     max-width: 960px;
     background-color: #f6f6f6;
     margin: 0 auto;
     height: 135px;
     position: relative; }
     @media only screen and (max-width: 970px) {
-      .l-header .l-header-content, .chose-your-presents .l-header-content {
-        height: 250px; } }
+      .l-header .l-header-content {
+        height: 230px; } }
+    @media only screen and (min-width: 768px) {
+      .l-header .l-header-content {
+        height: 230px !important; } }
     @media only screen and (min-width: 971px) {
-      .l-header .l-header-content, .chose-your-presents .l-header-content {
-        height: 135px; } }
+      .l-header .l-header-content {
+        height: 135px !important; } }
     @media only screen and (min-width: 970px) {
-      .l-header .l-header-content, .chose-your-presents .l-header-content {
+      .l-header .l-header-content {
         display: block; } }
-  .l-header .l-header-mini, .chose-your-presents .l-header-mini {
+  .l-header .l-header-mini {
     height: 330px; }
 
 .l-main {
